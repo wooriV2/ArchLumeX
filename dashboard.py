@@ -1,9 +1,8 @@
 ﻿"""
-ArchLumeX Dashboard v1.1
+ArchLumeX Dashboard v1.2
 실행: streamlit run dashboard.py
-
 건축/인테리어 AI 이미지 프롬프트 엔진
-대상: 집주인/일반인 (리모델링 참고용)
+v1.2: 셀렉박스 글자색 수정, 실사 강화
 """
 
 import sys
@@ -72,6 +71,15 @@ h1, h2, h3, h4, h5 {{ color: {GOLD} !important; letter-spacing: 1.5px !important
 .stSelectbox > div > div {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
 .stSelectbox > div > div:hover {{ border-color: rgba(184,150,110,0.4) !important; }}
 .stSelectbox label {{ color: {GOLD} !important; font-size: 0.68rem !important; letter-spacing: 1.2px !important; text-transform: uppercase !important; font-weight: 600 !important; }}
+.stSelectbox span, .stSelectbox p, .stSelectbox div[data-baseweb] span {{ color: {TEXT} !important; }}
+[data-baseweb="select"] span {{ color: {TEXT} !important; }}
+[data-baseweb="menu"] {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; }}
+[data-baseweb="menu"] li {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
+[data-baseweb="menu"] li:hover {{ background-color: #383838 !important; color: {GOLD} !important; }}
+[data-baseweb="option"] {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; }}
+[role="option"] {{ color: {TEXT} !important; background-color: {BG_INPUT} !important; }}
+[role="option"]:hover {{ background-color: #383838 !important; color: {GOLD} !important; }}
+[aria-selected="true"][role="option"] {{ background-color: #333 !important; color: {GOLD} !important; }}
 .stButton > button {{ border-radius: 6px !important; font-size: 0.75rem !important; letter-spacing: 1.5px !important; text-transform: uppercase !important; font-weight: 700 !important; transition: all 0.2s !important; height: 42px !important; }}
 .stButton > button[kind="primary"] {{ background: linear-gradient(135deg, {GOLD}, {GOLD_DIM}) !important; border: none !important; color: #111 !important; }}
 .stButton > button[kind="primary"]:hover {{ background: linear-gradient(135deg, #d4a97e, {GOLD}) !important; transform: translateY(-1px) !important; }}
@@ -94,19 +102,13 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
     transition: border-color 0.2s;
 }}
 .preset-card:hover {{ border-color: rgba(184,150,110,0.5); }}
-.tier-ss {{ color: #FFD700; font-weight: 700; font-size: 0.75rem; }}
-.tier-s  {{ color: #C0C0C0; font-weight: 700; font-size: 0.75rem; }}
-.tier-a  {{ color: #CD7F32; font-weight: 700; font-size: 0.75rem; }}
-.category-wow  {{ color: #ff6b6b; font-size: 0.7rem; letter-spacing: 1px; }}
-.category-live {{ color: #51cf66; font-size: 0.7rem; letter-spacing: 1px; }}
-.category-dream {{ color: #74c0fc; font-size: 0.7rem; letter-spacing: 1px; }}
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#b8966e;">🏛️ ArchLumeX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Architecture & Interior Image Engine · v1.1</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Architecture & Interior Image Engine · v1.2</div>
 </div>
 ''', unsafe_allow_html=True)
 
@@ -158,12 +160,8 @@ def get_prompt(data: dict, mode: str) -> str:
         return build_midjourney_prompt(data, global_aspect, mode)
 
 
-# ─── 탭 ──────────────────────────────────────────────────
 tab_ext, tab_int, tab_rand, tab_preset = st.tabs([
-    "🏠 실외 (Exterior)",
-    "🛋️ 실내 (Interior)",
-    "🎲 랜덤",
-    "✨ 프리셋"
+    "🏠 실외 (Exterior)", "🛋️ 실내 (Interior)", "🎲 랜덤", "✨ 프리셋"
 ])
 
 # ══════════════════════════════════════════════════════════
@@ -172,7 +170,6 @@ tab_ext, tab_int, tab_rand, tab_preset = st.tabs([
 with tab_ext:
     st.markdown("### 🏠 실외 건축 이미지 생성")
     st.caption("건물 외관, 정원, 파사드 디자인을 시각화해보세요.")
-
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown("##### 🏗️ 건물")
@@ -183,11 +180,11 @@ with tab_ext:
         ext_landscape  = st.selectbox("🌿 조경/정원",   list(LANDSCAPING.keys()),           key="ext_landscape")
     with col2:
         st.markdown("##### 📸 촬영")
-        ext_viewpoint  = st.selectbox("👁️ 시점/앵글",   list(EXTERIOR_VIEWPOINTS.keys()),   key="ext_viewpoint")
-        ext_lighting   = st.selectbox("💡 조명",        list(LIGHTING.keys()),              key="ext_lighting")
-        ext_time       = st.selectbox("🕐 시간대",      list(TIME_OF_DAY.keys()),           key="ext_time")
-        ext_weather    = st.selectbox("🌦️ 날씨",        list(WEATHER.keys()),               key="ext_weather")
-        ext_camera     = st.selectbox("📷 카메라",      list(CAMERAS.keys()),               key="ext_camera")
+        ext_viewpoint = st.selectbox("👁️ 시점/앵글",   list(EXTERIOR_VIEWPOINTS.keys()),   key="ext_viewpoint")
+        ext_lighting  = st.selectbox("💡 조명",        list(LIGHTING.keys()),              key="ext_lighting")
+        ext_time      = st.selectbox("🕐 시간대",      list(TIME_OF_DAY.keys()),           key="ext_time")
+        ext_weather   = st.selectbox("🌦️ 날씨",        list(WEATHER.keys()),               key="ext_weather")
+        ext_camera    = st.selectbox("📷 카메라",      list(CAMERAS.keys()),               key="ext_camera")
     with col3:
         st.markdown("##### 🎬 스타일")
         ext_angle  = st.selectbox("🔭 카메라 앵글",  list(CAMERA_ANGLES.keys()),  key="ext_angle")
@@ -257,7 +254,6 @@ with tab_ext:
 with tab_int:
     st.markdown("### 🛋️ 실내 인테리어 이미지 생성")
     st.caption("거실, 주방, 침실 등 실내 공간을 시각화해보세요.")
-
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown("##### 🏠 공간")
@@ -342,7 +338,6 @@ with tab_int:
 with tab_rand:
     st.markdown("### 🎲 완전 랜덤 생성")
     st.caption("실외/실내를 랜덤으로 골라 프롬프트를 생성합니다.")
-
     col1, col2, _ = st.columns([1, 1, 2])
     with col1:
         btn_rand_ext = st.button("🏠 실외 랜덤", type="primary", use_container_width=True, key="btn_rand_ext")
@@ -415,7 +410,6 @@ with tab_preset:
     if not all_presets:
         st.warning("프리셋이 없습니다. `python add_presets_v01.py` 를 먼저 실행하세요.")
     else:
-        # 카테고리 필터
         categories = ["전체"] + sorted(list(set(p.get("category", "") for p in all_presets)))
         col_f1, col_f2, _ = st.columns([1, 1, 2])
         with col_f1:
@@ -437,7 +431,6 @@ with tab_preset:
         if "preset_selected" not in st.session_state:
             st.session_state.preset_selected = ""
 
-        # 프리셋 카드 그리드 (3열)
         cols = st.columns(3)
         for i, preset in enumerate(filtered):
             with cols[i % 3]:
@@ -455,28 +448,25 @@ with tab_preset:
                   <div style="color:{GOLD};font-weight:600;font-size:0.9rem;margin-bottom:4px;">{preset.get('label','')}</div>
                   <div style="color:{TEXT_DIM};font-size:0.72rem;line-height:1.5;">{preset.get('description','')}</div>
                   <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:4px;">
-                    {''.join(f'<span style="background:#2a2a2a;color:#666;font-size:0.65rem;padding:2px 6px;border-radius:3px;">#{t}</span>' for t in preset.get('tags',[])[:4])}
+                    {''.join(f'<span style="background:#2a2a2a;color:#888;font-size:0.65rem;padding:2px 6px;border-radius:3px;">#{t}</span>' for t in preset.get('tags',[])[:4])}
                   </div>
                 </div>
                 """, unsafe_allow_html=True)
 
-                if st.button(f"✨ 프롬프트 생성", key=f"preset_btn_{i}", use_container_width=True):
+                if st.button("✨ 프롬프트 생성", key=f"preset_btn_{i}", use_container_width=True):
+                    from core.builders import QUALITY_GEMINI, QUALITY_CHATGPT, QUALITY_MJ
                     prompt = preset.get("preset_prompt", "")
-                    if global_platform == "Midjourney":
-                        ar_map = {
-                            "세로 2:3 — 외관 기본 ★": "2:3",
-                            "정방형 1:1 — 인스타 피드": "1:1",
-                            "가로 16:9 — 와이드 전경": "16:9",
-                            "가로 4:3 — 화보/카탈로그": "4:3",
-                            "가로 3:2 — 클래식 가로": "3:2",
-                            "세로 9:16 — 모바일/릴스": "9:16",
-                        }
+                    if global_platform == "Gemini":
+                        prompt = f"{prompt} {QUALITY_GEMINI}"
+                    elif global_platform == "ChatGPT (DALL-E)":
+                        prompt = f"{prompt} {QUALITY_CHATGPT}."
+                    else:
+                        ar_map = {"세로 2:3 — 외관 기본 ★":"2:3","정방형 1:1 — 인스타 피드":"1:1","가로 16:9 — 와이드 전경":"16:9","가로 4:3 — 화보/카탈로그":"4:3","가로 3:2 — 클래식 가로":"3:2","세로 9:16 — 모바일/릴스":"9:16"}
                         ar = ar_map.get(global_aspect, "2:3")
-                        prompt = f"{prompt} --ar {ar} --style raw --q 2"
+                        prompt = f"{prompt} {QUALITY_MJ} --ar {ar} --style raw --q 2 --v 6"
                     st.session_state.preset_prompt = prompt
                     st.session_state.preset_selected = preset.get("label", "")
 
-        # 생성된 프롬프트 출력
         if st.session_state.preset_prompt:
             st.markdown("---")
             st.markdown(f"**선택된 프리셋:** `{st.session_state.preset_selected}`")
@@ -484,6 +474,5 @@ with tab_preset:
             st.code(st.session_state.preset_prompt, language=None)
             st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
 
-
 st.markdown("---")
-st.markdown(f'<div style="text-align:center;color:#444;font-size:0.75rem;">🏛️ ArchLumeX v1.1 — AI Architecture & Interior Image Engine</div>', unsafe_allow_html=True)
+st.markdown(f'<div style="text-align:center;color:#444;font-size:0.75rem;">🏛️ ArchLumeX v1.2 — AI Architecture & Interior Image Engine</div>', unsafe_allow_html=True)
