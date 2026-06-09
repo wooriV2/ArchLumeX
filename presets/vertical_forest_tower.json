@@ -1,0 +1,28 @@
+{
+  "name": "vertical_forest_tower",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "수직 숲 타워",
+  "description": "온 몸이 나무와 식물로 뒤덮인 초고층 타워. 도심 한가운데 자연이 폭발하는 장면.",
+  "preset_prompt": "Professional architectural photography of a spectacular vertical forest skyscraper in a dense urban cityscape. Every balcony, terrace, and facade of the soaring tower is covered in thousands of real trees, shrubs, and plants — a living vertical forest erupting from concrete and glass. Oak, birch, and pine trees grow from each floor, their branches reaching outward. Lush greenery cascades down the sides. The tower stands in dramatic contrast against a blue sky, surrounded by conventional glass office towers. Birds circle the canopy levels. A city-within-a-nature miracle. Inspired by Bosco Verticale Milan. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "small multi-family villa, urban residential building",
+  "arch_style": "contemporary architecture, sleek modern design, sophisticated",
+  "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+  "roof_style": "green roof, rooftop garden, living grass roof, eco sustainable",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "수직숲",
+    "타워",
+    "바이오필릭",
+    "도심",
+    "나무",
+    "보스코베르티칼레",
+    "WOW"
+  ]
+}

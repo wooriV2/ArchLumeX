@@ -1,0 +1,27 @@
+{
+  "name": "cliffside_infinity_pool",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "지중해 절벽 인피니티풀",
+  "description": "지중해 절벽 위 빌라의 인피니티풀. 수평선과 풀이 하나로 이어지는 극적 장면.",
+  "preset_prompt": "Professional architectural photography of a stunning cliffside villa with an infinity pool overlooking the Mediterranean Sea. The infinity pool's edge perfectly merges with the turquoise sea horizon far below. White limestone terraces cascade down the dramatic cliff face. Bougainvillea in vivid magenta spills over stone walls. Sleek sun loungers and a minimalist pavilion frame the pool. The late afternoon golden sun casts long warm shadows. The sea below is an impossible shade of blue. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "country house, rural estate, large garden property",
+  "arch_style": "Mediterranean style, white walls, blue accents, arched windows",
+  "ext_material": "natural stone cladding, granite limestone, premium exterior",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "Mediterranean garden, olive trees, lavender, terracotta pots",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "luxurious elegant mood, premium sophisticated atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "인피니티풀",
+    "절벽",
+    "지중해",
+    "골든아워",
+    "빌라",
+    "WOW"
+  ]
+}

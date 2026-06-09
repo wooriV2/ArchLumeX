@@ -1,8 +1,11 @@
+"""
+ArchLumeX core/engine.py
+건축/인테리어 AI 이미지 프롬프트 엔진 — 프리셋 로더 & 빌더
+"""
+
 import json
-import os
 from pathlib import Path
 from typing import Optional
-
 
 PRESETS_DIR = Path(__file__).parent.parent / "presets"
 
@@ -22,29 +25,73 @@ def load_preset(preset_name: str) -> dict:
 
 def list_presets() -> list[str]:
     """사용 가능한 프리셋 목록 반환"""
+    if not PRESETS_DIR.exists():
+        return []
     return sorted([p.stem for p in PRESETS_DIR.glob("*.json")])
+
+
+def list_presets_by_category(category: str) -> list[str]:
+    """카테고리별 프리셋 목록 반환 (WOW / LIVE / DREAM)"""
+    result = []
+    for p in PRESETS_DIR.glob("*.json"):
+        with open(p, encoding="utf-8") as f:
+            data = json.load(f)
+        if data.get("category", "").upper() == category.upper():
+            result.append(p.stem)
+    return sorted(result)
+
+
+def list_presets_by_tier(tier: str) -> list[str]:
+    """티어별 프리셋 목록 반환 (SS / S / A)"""
+    result = []
+    for p in PRESETS_DIR.glob("*.json"):
+        with open(p, encoding="utf-8") as f:
+            data = json.load(f)
+        if data.get("tier", "").upper() == tier.upper():
+            result.append(p.stem)
+    return sorted(result)
 
 
 def build_prompt(preset: dict, overrides: Optional[dict] = None) -> str:
     """
     프리셋 데이터로 Gemini용 프롬프트 조립
-    overrides: 특정 필드만 덮어쓰기 가능
+    preset_prompt 필드가 있으면 우선 사용
     """
     p = {**preset, **(overrides or {})}
 
-    prompt = (
-        f"Professional fashion photograph of {p.get('subject', 'a female model')}. "
-        f"Body: {p.get('body', '')}. "
-        f"Wearing: {p.get('outfit', '')}. "
-        f"Environment: {p.get('environment', '')}. "
-        f"Lighting: {p.get('lighting', '')}. "
-        f"Style: {p.get('style', '')}. "
-        f"{p.get('quality', 'ultra-sharp, 8K, professional photography')}."
-    )
-    return prompt.strip()
+    if p.get("preset_prompt"):
+        return p["preset_prompt"]
+
+    parts = []
+    if p.get("building_type"):
+        parts.append(f"Building: {p['building_type']}.")
+    if p.get("arch_style"):
+        parts.append(f"Architectural style: {p['arch_style']}.")
+    if p.get("ext_material"):
+        parts.append(f"Exterior material: {p['ext_material']}.")
+    if p.get("lighting"):
+        parts.append(f"Lighting: {p['lighting']}.")
+    if p.get("mood"):
+        parts.append(f"Mood: {p['mood']}.")
+    parts.append("Ultra-sharp photorealistic image, 8K resolution, award-winning architectural photography.")
+
+    return " ".join(parts)
 
 
 def build_prompt_from_name(preset_name: str, overrides: Optional[dict] = None) -> str:
     """프리셋 이름으로 바로 프롬프트 생성"""
     preset = load_preset(preset_name)
     return build_prompt(preset, overrides)
+
+
+def get_preset_info(preset_name: str) -> dict:
+    """프리셋 메타 정보 반환"""
+    preset = load_preset(preset_name)
+    return {
+        "name":        preset.get("name", preset_name),
+        "label":       preset.get("label", ""),
+        "category":    preset.get("category", ""),
+        "tier":        preset.get("tier", ""),
+        "description": preset.get("description", ""),
+        "tags":        preset.get("tags", []),
+    }

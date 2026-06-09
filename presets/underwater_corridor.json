@@ -1,0 +1,28 @@
+{
+  "name": "underwater_corridor",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "수중 유리 복도",
+  "description": "산호초 한가운데를 관통하는 유리 터널 복도. 물고기와 빛 산란이 비현실적 아름다움을 연출.",
+  "preset_prompt": "Professional architectural photography of a stunning underwater glass tunnel corridor in a tropical ocean. Crystal-clear turquoise water surrounds the curved glass walkway on all sides. Vibrant coral reefs in orange, purple, and red grow against the glass exterior. Schools of tropical fish — parrotfish, angelfish, mantas — glide past. Dappled sunlight filters down from the surface above, creating shimmering caustic light patterns on the white floor. The tunnel stretches into a luminous blue infinity. Otherworldly beauty made real. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "small multi-family villa, urban residential building",
+  "arch_style": "high-tech architecture, glass and steel, futuristic precision",
+  "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "water feature, pond pool fountain, reflective water element",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "수중",
+    "유리터널",
+    "산호초",
+    "열대어",
+    "빛산란",
+    "WOW",
+    "판타지경계"
+  ]
+}

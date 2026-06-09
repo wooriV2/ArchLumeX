@@ -1,0 +1,28 @@
+{
+  "name": "desert_monolith_resort",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "사막 모노리스 리조트",
+  "description": "사막 한가운데 솟아오른 검은 모노리스형 리조트. 별하늘 + 붉은 모래의 압도적 스케일.",
+  "preset_prompt": "Professional architectural photography of a monumental black monolith resort rising from an endless red desert under a breathtaking Milky Way sky. A single massive obsidian-black rectangular tower stands alone in the vast Saharan landscape, dramatically lit from within — thin horizontal windows glow warm amber against the dark stone. The red sand dunes stretch to the horizon in every direction. Above, the Milky Way arcs across the night sky in brilliant detail. A lone camel silhouette in the far distance. The scale is humbling, the silence deafening. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "pension guesthouse, vacation rental, countryside inn",
+  "arch_style": "brutalist architecture, raw concrete mass, bold geometric forms",
+  "ext_material": "corten steel, weathering steel, rust-brown patina, industrial chic",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "gravel garden, pebble landscaping, low maintenance xeriscaping",
+  "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "사막",
+    "모노리스",
+    "별하늘",
+    "은하수",
+    "리조트",
+    "압도적",
+    "WOW"
+  ]
+}

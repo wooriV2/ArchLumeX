@@ -1,0 +1,28 @@
+{
+  "name": "hygge_snowcabin_night",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "눈밭 오두막 야경",
+  "description": "폭설 속 통나무 오두막. 굴뚝 연기 + 창문 따뜻한 빛 + 눈 쌓인 지붕. 포근함의 극치.",
+  "preset_prompt": "Professional architectural photography of a cozy log cabin in a winter wonderland at night. Heavy snow blankets the roof, the ground, and the surrounding pine trees. Warm golden light pours from every window, casting soft amber pools on the snow. Smoke curls lazily from the stone chimney. A wreath on the wooden door, firewood stacked neatly on the porch. Snowflakes fall gently. The contrast between the freezing blue-white exterior and the impossibly warm glowing interior is heart-stopping. A single lantern lights the snow path to the door. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "log cabin, wooden cabin, rustic forest dwelling",
+  "arch_style": "Scandinavian architecture, simple wood and white, cozy Nordic",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "gabled roof, classic triangular pitched roof",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "weather": "snowfall, snow-covered, winter white landscape",
+  "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "오두막",
+    "눈",
+    "야경",
+    "굴뚝",
+    "포근함",
+    "hygge",
+    "WOW"
+  ]
+}

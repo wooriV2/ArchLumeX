@@ -1,0 +1,28 @@
+{
+  "name": "brutalist_light_cathedral",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "빛의 콘크리트 성당",
+  "description": "거대한 노출 콘크리트 성당. 천장 틈새로 쏟아지는 극적인 빛기둥. 안도 타다오 스타일.",
+  "preset_prompt": "Professional architectural interior photography of a breathtaking brutalist cathedral carved from raw exposed concrete. Monolithic concrete walls soar upward. Narrow slits in the ceiling and walls channel brilliant shafts of sunlight that pierce the dim interior, creating dramatic beams of light through dusty air. The geometry is severe, powerful, and deeply spiritual. A long empty nave stretches toward a single cross of light at the far end. Silence made visible in stone and light. Inspired by Tadao Ando and Le Corbusier. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "single-family detached house, residential home",
+  "arch_style": "brutalist architecture, raw concrete mass, bold geometric forms",
+  "ext_material": "exposed concrete, raw textured finish, brutalist modern",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "",
+  "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "콘크리트",
+    "성당",
+    "빛기둥",
+    "브루탈리즘",
+    "극적",
+    "안도타다오",
+    "WOW"
+  ]
+}

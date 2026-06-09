@@ -1,0 +1,28 @@
+{
+  "name": "treehouse_canopy_mist",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "숲 캐노피 트리하우스",
+  "description": "고목 위에 지어진 트리하우스. 새벽 안개가 캐노피를 감싸는 신비롭고 포근한 장면.",
+  "preset_prompt": "Professional architectural photography of a magical treehouse perched high in the forest canopy at dawn. The treehouse is built seamlessly into and around several massive ancient oak trees, with wooden platforms, rope bridges, and a glass-walled sleeping pod. Morning mist drifts through the canopy, softening everything in a dreamy blue-white haze. Dappled early dawn light filters through the leaves, catching the mist in golden shafts. The treehouse seems to float above the world. Below, the forest floor is invisible in the mist. A perfect escape. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "log cabin, wooden cabin, rustic forest dwelling",
+  "arch_style": "vernacular architecture, local materials, organic natural building",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "shed roof, mono-pitch single slope, modern asymmetric",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+  "weather": "foggy misty atmosphere, mysterious soft focus",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "high key bright airy, overexposed clean white tone",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "트리하우스",
+    "안개",
+    "새벽",
+    "캐노피",
+    "신비로운",
+    "포근함",
+    "WOW"
+  ]
+}

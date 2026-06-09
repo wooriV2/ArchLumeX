@@ -1,0 +1,28 @@
+{
+  "name": "courtyard_rain_lantern",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "중정 빗속 등불",
+  "description": "중정 안마당에 빗소리, 나무 한 그루, 등불 하나. 고요하고 감성적인 동양적 아름다움.",
+  "preset_prompt": "Professional architectural photography of a serene Japanese-Korean courtyard house in the rain. A single ancient gnarled tree stands at the center of the stone-paved inner courtyard. Rain falls softly, creating ripples in a shallow reflecting pool at the base of the tree. A single traditional stone lantern glows with warm amber light, its reflection dancing in the water. The surrounding wooden and concrete architecture frames the courtyard with deep overhanging eaves, sheltering the walkways. Rain streaks catch the lantern light. The sound of rain on leaves is almost audible. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "traditional Korean hanok, timber frame, tiled roof",
+  "arch_style": "Japanese modern architecture, wabi-sabi, natural materials, Zen",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "traditional Korean tile roof, curved hanok eaves, clay tiles",
+  "landscaping": "Japanese zen garden, raked gravel, stone lantern, pine bonsai",
+  "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "weather": "rainy weather, wet ground reflections, rain atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "중정",
+    "비",
+    "등불",
+    "한옥",
+    "일본정원",
+    "고요함",
+    "WOW"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "arctic_glass_igloo",
+  "category": "WOW",
+  "tier": "SS",
+  "label": "오로라 유리 이글루",
+  "description": "북극 오로라 아래 유리 이글루 호텔. 오로라 반사 + 따뜻한 실내빛 대비.",
+  "preset_prompt": "Professional architectural photography of a luxury glass igloo hotel under the Northern Lights in the Arctic. A perfectly domed transparent glass structure sits on pristine white snow. The aurora borealis blazes across the sky in vivid green, violet, and teal, reflecting off the curved glass surface. Inside, warm amber light glows invitingly — a bed with fur blankets visible through the glass. The snow around the igloo sparkles under the aurora. Absolute silence and magic. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography, National Geographic quality.",
+  "building_type": "pension guesthouse, vacation rental, countryside inn",
+  "arch_style": "high-tech architecture, glass and steel, futuristic precision",
+  "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "",
+  "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "weather": "snowfall, snow-covered, winter white landscape",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "오로라",
+    "이글루",
+    "북극",
+    "유리돔",
+    "눈",
+    "WOW",
+    "판타지경계"
+  ]
+}
