@@ -1,0 +1,28 @@
+{
+  "name": "scandinavian_lakehouse",
+  "category": "LIVE",
+  "tier": "SS",
+  "label": "북유럽 호수변 목조 주택",
+  "description": "고요한 호수가에 자리한 북유럽 스타일 목조 주택. 새벽 안개와 수면 반사가 꿈처럼 아름답고 실제로 살고 싶은 포근함.",
+  "preset_prompt": "Professional architectural photography of a stunning Scandinavian lakehouse at dawn. A beautifully crafted timber and glass house sits directly on the edge of a perfectly still Nordic lake. The house features warm cedar cladding, a wide overhanging roof, and floor-to-ceiling windows that reflect the glassy water below. Morning mist drifts low over the lake surface. Inside, warm amber light glows through the windows. A simple wooden dock extends into the mirror-still water. Pine and birch trees surround the property. The entire scene is reflected perfectly in the lake. Breathtakingly peaceful. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "country house, rural estate, large garden property",
+  "arch_style": "Scandinavian architecture, simple wood and white, cozy Nordic",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "shed roof, mono-pitch single slope, modern asymmetric",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+  "weather": "foggy misty atmosphere, mysterious soft focus",
+  "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "북유럽",
+    "호수",
+    "목조",
+    "새벽안개",
+    "수면반사",
+    "LIVE",
+    "살고싶다"
+  ]
+}

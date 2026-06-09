@@ -1,0 +1,29 @@
+{
+  "name": "forest_cabin_morning",
+  "category": "LIVE",
+  "tier": "SS",
+  "label": "침엽수림 목조 오두막 아침",
+  "description": "침엽수림 속 아늑한 목조 오두막. 아침 햇살이 숲을 관통하고 커피 한 잔이 생각나는 전원생활의 이상향.",
+  "preset_prompt": "Professional architectural photography of a perfect woodland cabin nestled among tall pine and fir trees on a crisp autumn morning. The cabin is beautifully crafted from dark stained timber with a metal roof dusted with pine needles. A wide covered porch with a rocking chair and a steaming coffee mug faces the forest. Morning sunlight filters through the tall trees in golden shafts, illuminating the forest floor of ferns and moss. Smoke curls from the stone chimney. A small vegetable garden and wood pile complete the scene. Through the large cabin windows, warm bookshelves and a fireplace are visible. The ultimate retreat. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "log cabin, wooden cabin, rustic forest dwelling",
+  "arch_style": "vernacular architecture, local materials, organic natural building",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "gabled roof, classic triangular pitched roof",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "오두막",
+    "침엽수림",
+    "아침",
+    "전원생활",
+    "커피",
+    "포근함",
+    "LIVE",
+    "살고싶다"
+  ]
+}

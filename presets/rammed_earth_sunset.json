@@ -1,0 +1,28 @@
+{
+  "name": "rammed_earth_sunset",
+  "category": "LIVE",
+  "tier": "SS",
+  "label": "흙다짐 주택 사막 석양",
+  "description": "붉은 흙다짐 벽체의 현대 주택과 사막 석양. 흙의 따뜻한 토색과 하늘의 극적인 색감이 완벽히 어우러짐.",
+  "preset_prompt": "Professional architectural photography of a stunning rammed earth modern house in a desert landscape at sunset. The house features thick layered rammed earth walls in warm ochre, terracotta, and sienna tones — the compressed earth layers visible as beautiful horizontal strata. Large steel-framed windows and a flat roof create a perfect modern-primitive tension. The setting sun blazes the sky in deep orange, magenta, and purple. The warm earth walls glow in the last light. A long infinity lap pool reflects the burning sky. Desert scrub and cacti surround the property. The house looks as if it grew from the earth itself. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "country house, rural estate, large garden property",
+  "arch_style": "vernacular architecture, local materials, organic natural building",
+  "ext_material": "natural stone cladding, granite limestone, premium exterior",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "gravel garden, pebble landscaping, low maintenance xeriscaping",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "cinematic teal and orange, film look color grade",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "흙다짐",
+    "사막",
+    "석양",
+    "어스톤",
+    "현대주택",
+    "LIVE",
+    "이국적"
+  ]
+}

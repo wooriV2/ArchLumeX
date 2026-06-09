@@ -1,0 +1,28 @@
+{
+  "name": "modern_courtyard_house",
+  "category": "LIVE",
+  "tier": "SS",
+  "label": "모던 중정 수공간 주택",
+  "description": "도심형 현대 주택의 중정에 얕은 수공간과 조각 나무 한 그루. 콘크리트+목재+물의 완벽한 균형.",
+  "preset_prompt": "Professional architectural photography of a sophisticated modern courtyard house in an urban setting. The house wraps around a central open-air courtyard featuring a shallow reflecting pool with a single sculptural Japanese maple tree growing from its center. Raw concrete walls meet warm teak wood screens and panels. The interior rooms open fully to the courtyard through floor-to-ceiling sliding glass. Evening light makes the water surface shimmer and reflects the surrounding architecture. Carefully curated plants soften the concrete. The courtyard is the heart of the home — a private sky-lit oasis in the city. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "single-family detached house, residential home",
+  "arch_style": "modern minimalist architecture, clean lines, white walls, flat roof",
+  "ext_material": "exposed concrete, raw textured finish, brutalist modern",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "water feature, pond pool fountain, reflective water element",
+  "lighting": "spot accent lighting, highlighted focal points, dramatic spots",
+  "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "minimal clean restrained mood, quiet understated atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "중정",
+    "수공간",
+    "모던",
+    "콘크리트",
+    "목재",
+    "도시주택",
+    "LIVE"
+  ]
+}

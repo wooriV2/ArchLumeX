@@ -1,0 +1,29 @@
+{
+  "name": "bamboo_house_rain",
+  "category": "LIVE",
+  "tier": "SS",
+  "label": "대나무숲 현대 주택 빗속",
+  "description": "빽빽한 대나무숲 속 현대 주택. 빗소리와 대나무 흔들림, 따뜻한 실내빛의 동양적 고요함.",
+  "preset_prompt": "Professional architectural photography of a serene modern house enveloped by a dense bamboo grove in the rain. The house features clean horizontal lines, dark steel and wood construction, with large floor-to-ceiling windows that frame the surrounding bamboo forest. Rain falls steadily, causing the tall bamboo culms to sway gently and glisten. The bamboo forest fills every window view, creating a living green wall on all sides. Warm interior light glows through the glass, reflecting on the wet stone terrace. A shallow water basin collects raindrops, creating circular ripples. The sound of rain on bamboo is almost audible in the image. Profound tranquility. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "single-family detached house, residential home",
+  "arch_style": "Japanese modern architecture, wabi-sabi, natural materials, Zen",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "bamboo screen, privacy bamboo grove, Asian garden element",
+  "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "weather": "rainy weather, wet ground reflections, rain atmosphere",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "대나무",
+    "비",
+    "고요함",
+    "현대주택",
+    "동양적",
+    "선",
+    "LIVE",
+    "살고싶다"
+  ]
+}

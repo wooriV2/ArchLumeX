@@ -1,0 +1,28 @@
+{
+  "name": "rooftop_garden_dusk",
+  "category": "LIVE",
+  "tier": "SS",
+  "label": "옥상정원 황혼 도시뷰",
+  "description": "도심 고층 건물 옥상의 럭셔리 정원. 황혼에 물드는 도시 스카이라인과 초록 정원의 완벽한 대비.",
+  "preset_prompt": "Professional architectural photography of a breathtaking rooftop garden terrace on a luxury urban building at dusk. The expansive rooftop is transformed into a lush garden oasis — mature olive trees, lavender hedges, ornamental grasses, and a long lap pool run parallel to the city skyline. Comfortable outdoor sofas and dining tables are set among the plantings. The city skyscrapers glow in the blue-hour light behind the green garden foreground. String lights begin to illuminate the space. The contrast between the organic garden and the geometric city creates a magical tension. Urban living at its absolute finest. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "small multi-family villa, urban residential building",
+  "arch_style": "contemporary architecture, sleek modern design, sophisticated",
+  "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+  "roof_style": "green roof, rooftop garden, living grass roof, eco sustainable",
+  "landscaping": "rooftop terrace, deck garden, urban rooftop outdoor space",
+  "lighting": "blue hour twilight, mystical cool blue atmospheric glow",
+  "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "luxurious elegant mood, premium sophisticated atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "옥상정원",
+    "황혼",
+    "도시뷰",
+    "블루아워",
+    "럭셔리",
+    "도심",
+    "LIVE"
+  ]
+}

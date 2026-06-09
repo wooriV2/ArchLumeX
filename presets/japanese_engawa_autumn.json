@@ -1,0 +1,28 @@
+{
+  "name": "japanese_engawa_autumn",
+  "category": "LIVE",
+  "tier": "SS",
+  "label": "일본 툇마루 단풍 석양",
+  "description": "처마 아래 툇마루(縁側)에서 바라보는 단풍 정원과 석양. 고요하고 따뜻한 일본 목조 주택의 계절감 극대화.",
+  "preset_prompt": "Professional architectural photography of a serene Japanese wooden house with a traditional engawa veranda at golden hour in autumn. The wide timber veranda stretches along the entire facade, sheltered by deep overhanging eaves. A meticulously maintained Japanese garden beyond — maple trees blazing in crimson, amber, and gold. The low autumn sun casts warm long shadows across the worn wooden floor. Shoji paper screens glow softly from within. A single stone lantern among the fallen leaves. The garden path curves between moss-covered stones. Pure wabi-sabi perfection. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "traditional Korean hanok, timber frame, tiled roof",
+  "arch_style": "Japanese modern architecture, wabi-sabi, natural materials, Zen",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "traditional Korean tile roof, curved hanok eaves, clay tiles",
+  "landscaping": "Japanese zen garden, raked gravel, stone lantern, pine bonsai",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "툇마루",
+    "단풍",
+    "석양",
+    "일본주택",
+    "정원",
+    "와비사비",
+    "LIVE"
+  ]
+}

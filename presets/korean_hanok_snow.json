@@ -1,0 +1,29 @@
+{
+  "name": "korean_hanok_snow",
+  "category": "LIVE",
+  "tier": "SS",
+  "label": "현대한옥 설경 야경",
+  "description": "전통 기와지붕 위에 눈이 쌓인 현대한옥. 마당의 고요한 설경과 창문으로 새어나오는 따뜻한 불빛의 대비.",
+  "preset_prompt": "Professional architectural photography of a stunning modern Korean hanok house in winter snow at night. The traditional curved clay tile roof is blanketed in pristine white snow, its elegant lines even more beautiful under the weight. A central stone-paved courtyard holds a single ancient pine tree dusted with snow. Warm amber light pours from the hanji paper screen windows and sliding doors, casting a golden glow on the snow. The wooden eaves and exposed timber frame are highlighted by subtle exterior lighting. Snow falls gently. The combination of 600-year-old architectural tradition with modern comfort is deeply moving. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "traditional Korean hanok, timber frame, tiled roof",
+  "arch_style": "modern hanok, traditional Korean fusion, contemporary hanok design",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "traditional Korean tile roof, curved hanok eaves, clay tiles",
+  "landscaping": "Japanese zen garden, raked gravel, stone lantern, pine bonsai",
+  "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "weather": "snowfall, snow-covered, winter white landscape",
+  "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "한옥",
+    "눈",
+    "야경",
+    "기와지붕",
+    "마당",
+    "설경",
+    "LIVE",
+    "살고싶다"
+  ]
+}
