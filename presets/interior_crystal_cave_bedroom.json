@@ -1,0 +1,29 @@
+{
+  "name": "interior_crystal_cave_bedroom",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "수정 동굴 침실",
+  "description": "멕시코 나이카 수정 동굴을 연상시키는 거대 수정 결정체 동굴 침실. 수천 개의 수정이 빛을 굴절시키며 무지개빛으로 빛나는 공간.",
+  "preset_prompt": "Professional architectural interior photography of a bedroom built inside a vast crystal cave inspired by Mexico's Cave of Crystals. Enormous selenite crystal columns — some over ten meters long — fill the cave space with their translucent white glow. A bed platform of polished black stone sits among the crystals. Soft warm lighting from within the crystal columns themselves fills the cave with amber and golden light. Where crystals catch this light, rainbow prisms scatter across the cave walls and ceiling. The temperature and otherworldliness are palpable. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "bedroom, master bedroom, sleeping space",
+  "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+  "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+  "special_features": "fireplace, hearth, warm interior focal point",
+  "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "수정동굴",
+    "침실",
+    "나이카",
+    "크리스탈",
+    "프리즘",
+    "DREAM",
+    "실내"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "interior_treehouse_canopy_bedroom",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "숲 캐노피 유리 침실",
+  "description": "거대한 나무 캐노피 한가운데 매달린 유리 침실 캡슐. 사방이 나뭇잎과 새로 가득하고 안개가 흐르는 마법 같은 공중 공간.",
+  "preset_prompt": "Professional architectural interior photography of a magical glass bedroom pod suspended in the canopy of an ancient forest. The glass capsule hangs between massive tree branches high above the forest floor, surrounded entirely by leaves, branches, and sky. Inside, a luxurious bed faces every direction of forest. Morning light filters through a thousand leaves, dappling the interior in gold and green. A family of birds nests in a branch just outside the glass. Mist from below drifts past the capsule. The feeling of being entirely inside the tree canopy is complete and magical. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "bedroom, master bedroom, sleeping space",
+  "int_style": "warm modern interior, neutral warm tones, cozy contemporary",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "Scandinavian furniture, light oak wood, simple clean design",
+  "color_palette": "green and natural tones, biophilic nature-inspired palette",
+  "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "캐노피",
+    "유리침실",
+    "숲속",
+    "공중",
+    "나무",
+    "DREAM",
+    "실내"
+  ]
+}

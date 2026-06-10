@@ -1,0 +1,29 @@
+{
+  "name": "interior_garden_atrium",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "실내 열대우림 아트리움",
+  "description": "10층 높이 아트리움 전체가 살아있는 열대우림. 실내 폭포가 흐르고 앵무새가 날고 나비가 춤추는 완전한 생태계 실내 공간.",
+  "preset_prompt": "Professional architectural interior photography of a spectacular ten-story indoor rainforest atrium. The entire vast interior space has been transformed into a living tropical ecosystem — towering trees reach the glass ceiling far above, their canopies creating a complete jungle layer. A waterfall cascades down one living green wall from the fifth floor to a natural pool below. Scarlet macaws and toucans fly between the levels. Blue morpho butterflies drift through shafts of tropical light. Every balcony and walkway is overgrown with orchids and bromeliads. The air is warm and humid. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "bohemian interior, layered textiles, eclectic patterns, free-spirited",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "mid-century modern furniture, organic curves, tapered legs, retro",
+  "color_palette": "green and natural tones, biophilic nature-inspired palette",
+  "special_features": "indoor plants, lush greenery, biophilic plant decor",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "열대우림",
+    "아트리움",
+    "실내폭포",
+    "앵무새",
+    "생태계",
+    "DREAM",
+    "실내"
+  ]
+}

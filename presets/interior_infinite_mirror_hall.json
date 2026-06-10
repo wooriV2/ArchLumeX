@@ -1,0 +1,29 @@
+{
+  "name": "interior_infinite_mirror_hall",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "무한 거울 홀",
+  "description": "바닥부터 천장까지 완전 거울로 된 무한 반사 홀. 현실과 반사의 경계가 사라지고 공간이 무한히 확장되는 초현실적 공간.",
+  "preset_prompt": "Professional architectural interior photography of a breathtaking infinite mirror hall. Every surface — floor, ceiling, all four walls — is a perfect mirror, creating infinite reflections in every direction that extend to an impossible vanishing point. At the center, a single dramatic floral installation of thousands of white orchids hangs from the ceiling, reflected endlessly in every direction into infinity. Warm amber spotlights create a perfect glow that multiplies into the infinite reflections. The boundary between real and reflected is completely indistinguishable. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "entrance foyer, entryway, hallway",
+  "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+  "int_material": "marble flooring, luxurious stone, veined marble surface",
+  "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+  "color_palette": "all-white color scheme, pure white walls ceiling floor, minimal",
+  "special_features": "art gallery wall, curated artwork display, statement wall",
+  "lighting": "spot accent lighting, highlighted focal points, dramatic spots",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "거울홀",
+    "무한반사",
+    "초현실",
+    "꽃설치",
+    "거울",
+    "DREAM",
+    "실내"
+  ]
+}

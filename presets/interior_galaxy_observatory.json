@@ -1,0 +1,29 @@
+{
+  "name": "interior_galaxy_observatory",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "은하수 천장 천문대 거실",
+  "description": "천장 전체가 우주 공간으로 열린 개인 천문대 거실. 은하수와 성운이 바로 머리 위에 펼쳐지는 우주적 스케일의 공간.",
+  "preset_prompt": "Professional architectural interior photography of a private observatory living room where the entire ceiling has dissolved into open space. The room below is sophisticated and dark — black marble floors reflecting the starlight above, low curved sofas in deep navy velvet, a single glowing fireplace. But above, the ceiling is completely open to the cosmos — the Milky Way blazes in extraordinary detail directly overhead, nebulae in violet and rose, star clusters, the curve of the galaxy arm. It is impossible to tell where the room ends and space begins. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+  "int_material": "marble flooring, luxurious stone, veined marble surface",
+  "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+  "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+  "special_features": "skylight, roof window, natural light from above",
+  "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "은하수",
+    "천문대",
+    "우주",
+    "거실",
+    "천장개방",
+    "DREAM",
+    "실내"
+  ]
+}

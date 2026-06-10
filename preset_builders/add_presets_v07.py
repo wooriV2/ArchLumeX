@@ -1,0 +1,248 @@
+"""
+ArchLumeX add_presets_v07.py
+실내 DREAM 카테고리 10개 프리셋 — "판타지/불가능한 실내 공간"
+
+실행: python add_presets_v07.py (preset_builders/ 폴더에서)
+"""
+
+import json
+from pathlib import Path
+
+PRESETS_DIR = Path(__file__).parent.parent / "presets"
+PRESETS_DIR.mkdir(exist_ok=True)
+
+PRESETS = [
+    {
+        "name": "interior_underwater_bedroom",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "수중 유리 침실",
+        "description": "심해 한가운데 완전 유리로 된 침실. 침대에 누우면 고래와 산호초가 바로 옆에서 유영하는 불가능하고 아름다운 공간.",
+        "preset_prompt": "Professional architectural interior photography of an extraordinary underwater glass bedroom capsule on the ocean floor. The entire room is a seamless glass bubble — floor, walls, ceiling all transparent. A king bed with white linens sits at the center. Outside, a vibrant coral reef teems with tropical fish in electric colors — parrotfish, angelfish, clownfish. A massive whale shark drifts past the glass ceiling above. Shafts of filtered turquoise light penetrate from the distant surface above. Bioluminescent creatures glow softly in the darker depths beyond the reef. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "bedroom, master bedroom, sleeping space",
+        "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+        "int_material": "marble flooring, luxurious stone, veined marble surface",
+        "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+        "color_palette": "sky blue and white Mediterranean palette, fresh airy",
+        "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "mood": "biophilic natural mood, organic earthy serene atmosphere",
+        "color_grade": "cool blue color grade, crisp clean tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["수중", "침실", "유리캡슐", "고래", "산호초", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_galaxy_observatory",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "은하수 천장 천문대 거실",
+        "description": "천장 전체가 우주 공간으로 열린 개인 천문대 거실. 은하수와 성운이 바로 머리 위에 펼쳐지는 우주적 스케일의 공간.",
+        "preset_prompt": "Professional architectural interior photography of a private observatory living room where the entire ceiling has dissolved into open space. The room below is sophisticated and dark — black marble floors reflecting the starlight above, low curved sofas in deep navy velvet, a single glowing fireplace. But above, the ceiling is completely open to the cosmos — the Milky Way blazes in extraordinary detail directly overhead, nebulae in violet and rose, star clusters, the curve of the galaxy arm. It is impossible to tell where the room ends and space begins. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+        "int_material": "marble flooring, luxurious stone, veined marble surface",
+        "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+        "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+        "special_features": "skylight, roof window, natural light from above",
+        "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["은하수", "천문대", "우주", "거실", "천장개방", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_crystal_cave_bedroom",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "수정 동굴 침실",
+        "description": "멕시코 나이카 수정 동굴을 연상시키는 거대 수정 결정체 동굴 침실. 수천 개의 수정이 빛을 굴절시키며 무지개빛으로 빛나는 공간.",
+        "preset_prompt": "Professional architectural interior photography of a bedroom built inside a vast crystal cave inspired by Mexico's Cave of Crystals. Enormous selenite crystal columns — some over ten meters long — fill the cave space with their translucent white glow. A bed platform of polished black stone sits among the crystals. Soft warm lighting from within the crystal columns themselves fills the cave with amber and golden light. Where crystals catch this light, rainbow prisms scatter across the cave walls and ceiling. The temperature and otherworldliness are palpable. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "bedroom, master bedroom, sleeping space",
+        "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+        "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+        "special_features": "fireplace, hearth, warm interior focal point",
+        "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["수정동굴", "침실", "나이카", "크리스탈", "프리즘", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_infinite_mirror_hall",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "무한 거울 홀",
+        "description": "바닥부터 천장까지 완전 거울로 된 무한 반사 홀. 현실과 반사의 경계가 사라지고 공간이 무한히 확장되는 초현실적 공간.",
+        "preset_prompt": "Professional architectural interior photography of a breathtaking infinite mirror hall. Every surface — floor, ceiling, all four walls — is a perfect mirror, creating infinite reflections in every direction that extend to an impossible vanishing point. At the center, a single dramatic floral installation of thousands of white orchids hangs from the ceiling, reflected endlessly in every direction into infinity. Warm amber spotlights create a perfect glow that multiplies into the infinite reflections. The boundary between real and reflected is completely indistinguishable. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "entrance foyer, entryway, hallway",
+        "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+        "int_material": "marble flooring, luxurious stone, veined marble surface",
+        "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+        "color_palette": "all-white color scheme, pure white walls ceiling floor, minimal",
+        "special_features": "art gallery wall, curated artwork display, statement wall",
+        "lighting": "spot accent lighting, highlighted focal points, dramatic spots",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "natural color grading, true-to-life realistic colors",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["거울홀", "무한반사", "초현실", "꽃설치", "거울", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_cloud_living_room",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "구름 속 거실",
+        "description": "구름 위에 떠있는 완전 투명 거실. 바닥도 유리여서 발 아래 구름이 흐르고 사방이 하늘로 열린 초현실적 공중 공간.",
+        "preset_prompt": "Professional architectural interior photography of a living room suspended inside a cloud above the earth. The entire structure is transparent glass — floor, ceiling, walls. White cumulus clouds drift through and around the room, sometimes obscuring the view, sometimes parting to reveal glimpses of the earth far below and the blue sky above. Impossibly comfortable white sofas seem to float on the glass floor above the clouds. Sunlight refracts through the water droplets of the clouds, creating soft rainbow halos throughout the space. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+        "color_palette": "all-white color scheme, pure white walls ceiling floor, minimal",
+        "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "high key bright airy, overexposed clean white tone",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["구름", "거실", "투명바닥", "공중", "초현실", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_lava_cave_lounge",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "용암 동굴 라운지",
+        "description": "활화산 내부 용암 동굴을 개조한 럭셔리 라운지. 유리 바닥 아래로 흐르는 용암과 극적인 붉은 빛이 만드는 지하 세계.",
+        "preset_prompt": "Professional architectural interior photography of an extraordinary luxury lounge built inside a volcanic lava cave. The cave walls are raw black basalt, dramatically lit by the glow of flowing lava visible through thick glass floor panels below. The lava river flows slowly beneath the transparent floor, casting the entire space in shifting orange and red light. Against this infernal backdrop, the interior is paradoxically sophisticated — low black leather seating, obsidian bar surfaces, brass fittings. Stalactites hang from the cave ceiling above. The heat and drama are overwhelming. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+        "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+        "special_features": "fireplace, hearth, warm interior focal point",
+        "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["용암동굴", "라운지", "투명바닥", "화산", "극적", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_treehouse_canopy_bedroom",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "숲 캐노피 유리 침실",
+        "description": "거대한 나무 캐노피 한가운데 매달린 유리 침실 캡슐. 사방이 나뭇잎과 새로 가득하고 안개가 흐르는 마법 같은 공중 공간.",
+        "preset_prompt": "Professional architectural interior photography of a magical glass bedroom pod suspended in the canopy of an ancient forest. The glass capsule hangs between massive tree branches high above the forest floor, surrounded entirely by leaves, branches, and sky. Inside, a luxurious bed faces every direction of forest. Morning light filters through a thousand leaves, dappling the interior in gold and green. A family of birds nests in a branch just outside the glass. Mist from below drifts past the capsule. The feeling of being entirely inside the tree canopy is complete and magical. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "bedroom, master bedroom, sleeping space",
+        "int_style": "warm modern interior, neutral warm tones, cozy contemporary",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "Scandinavian furniture, light oak wood, simple clean design",
+        "color_palette": "green and natural tones, biophilic nature-inspired palette",
+        "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["캐노피", "유리침실", "숲속", "공중", "나무", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_time_library",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "시간이 멈춘 도서관",
+        "description": "시간이 멈춘 듯한 도서관. 책과 낙엽이 공중에 떠있고 모래시계의 모래가 공중에 정지된 초현실적 서재 공간.",
+        "preset_prompt": "Professional architectural interior photography of a surrealist library where time has frozen. Hundreds of open books float suspended in mid-air at every level of a vast library, their pages caught mid-flutter. Autumn leaves drift motionless through the space. An hourglass on the central reading table has its sand frozen in mid-flow, the grains suspended in a perfect arc. Candles burn with still flames. A cup of tea steams upward in a frozen spiral. Everything is caught in the exact moment of suspension. The library itself is beautiful — dark wood, warm lamplight, thousands of books. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI visualization, 8K resolution.",
+        "space_type": "home office, study room, work from home space",
+        "int_style": "classic European interior, crown molding, elegant traditional",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "classic European furniture, ornate molding, antique elegant",
+        "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+        "special_features": "floor-to-ceiling bookshelf, library wall, book collection",
+        "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["도서관", "시간정지", "초현실", "책부유", "서재", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_aurora_ice_bedroom",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "오로라 얼음 침실",
+        "description": "순수한 얼음으로 만들어진 침실 내부. 오로라 빛이 얼음 벽을 투과하며 무지개빛으로 굴절되는 환상적인 얼음 궁전 내부.",
+        "preset_prompt": "Professional architectural interior photography of a bedroom carved entirely from pure glacier ice. The walls, ceiling, and floor are translucent blue-white ice, smoothed to a glassy surface. The Northern Lights blazing outside penetrate through the ice walls, refracting into waves of green, violet, and teal that fill the interior. A bed of fur blankets and reindeer pelts sits on an ice platform. The ice glows from within with the aurora light. Candles in ice niches add warm amber points of light. The cold is absolute and beautiful. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "bedroom, master bedroom, sleeping space",
+        "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "rustic country interior, natural wood stone, warm farmhouse",
+        "color_palette": "sky blue and white Mediterranean palette, fresh airy",
+        "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+        "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "cool blue color grade, crisp clean tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["얼음침실", "오로라", "빙하", "얼음궁전", "굴절", "DREAM", "실내"],
+    },
+    {
+        "name": "interior_garden_atrium",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "실내 열대우림 아트리움",
+        "description": "10층 높이 아트리움 전체가 살아있는 열대우림. 실내 폭포가 흐르고 앵무새가 날고 나비가 춤추는 완전한 생태계 실내 공간.",
+        "preset_prompt": "Professional architectural interior photography of a spectacular ten-story indoor rainforest atrium. The entire vast interior space has been transformed into a living tropical ecosystem — towering trees reach the glass ceiling far above, their canopies creating a complete jungle layer. A waterfall cascades down one living green wall from the fifth floor to a natural pool below. Scarlet macaws and toucans fly between the levels. Blue morpho butterflies drift through shafts of tropical light. Every balcony and walkway is overgrown with orchids and bromeliads. The air is warm and humid. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "bohemian interior, layered textiles, eclectic patterns, free-spirited",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "mid-century modern furniture, organic curves, tapered legs, retro",
+        "color_palette": "green and natural tones, biophilic nature-inspired palette",
+        "special_features": "indoor plants, lush greenery, biophilic plant decor",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "mood": "biophilic natural mood, organic earthy serene atmosphere",
+        "color_grade": "natural color grading, true-to-life realistic colors",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["열대우림", "아트리움", "실내폭포", "앵무새", "생태계", "DREAM", "실내"],
+    },
+]
+
+
+def main():
+    created = 0
+    skipped = 0
+
+    for preset in PRESETS:
+        path = PRESETS_DIR / f"{preset['name']}.json"
+        if path.exists():
+            print(f"  SKIP  {preset['name']}.json (이미 존재)")
+            skipped += 1
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(preset, f, ensure_ascii=False, indent=2)
+            print(f"  OK    {preset['name']}.json")
+            created += 1
+
+    print(f"\n완료: {created}개 생성, {skipped}개 건너뜀")
+    print(f"총 프리셋: {len(list(PRESETS_DIR.glob('*.json')))}개")
+
+
+if __name__ == "__main__":
+    main()

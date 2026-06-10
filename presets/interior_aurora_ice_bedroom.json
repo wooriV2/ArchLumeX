@@ -1,0 +1,29 @@
+{
+  "name": "interior_aurora_ice_bedroom",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "오로라 얼음 침실",
+  "description": "순수한 얼음으로 만들어진 침실 내부. 오로라 빛이 얼음 벽을 투과하며 무지개빛으로 굴절되는 환상적인 얼음 궁전 내부.",
+  "preset_prompt": "Professional architectural interior photography of a bedroom carved entirely from pure glacier ice. The walls, ceiling, and floor are translucent blue-white ice, smoothed to a glassy surface. The Northern Lights blazing outside penetrate through the ice walls, refracting into waves of green, violet, and teal that fill the interior. A bed of fur blankets and reindeer pelts sits on an ice platform. The ice glows from within with the aurora light. Candles in ice niches add warm amber points of light. The cold is absolute and beautiful. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "bedroom, master bedroom, sleeping space",
+  "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "rustic country interior, natural wood stone, warm farmhouse",
+  "color_palette": "sky blue and white Mediterranean palette, fresh airy",
+  "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+  "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "얼음침실",
+    "오로라",
+    "빙하",
+    "얼음궁전",
+    "굴절",
+    "DREAM",
+    "실내"
+  ]
+}

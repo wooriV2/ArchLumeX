@@ -1,0 +1,29 @@
+{
+  "name": "interior_lava_cave_lounge",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "용암 동굴 라운지",
+  "description": "활화산 내부 용암 동굴을 개조한 럭셔리 라운지. 유리 바닥 아래로 흐르는 용암과 극적인 붉은 빛이 만드는 지하 세계.",
+  "preset_prompt": "Professional architectural interior photography of an extraordinary luxury lounge built inside a volcanic lava cave. The cave walls are raw black basalt, dramatically lit by the glow of flowing lava visible through thick glass floor panels below. The lava river flows slowly beneath the transparent floor, casting the entire space in shifting orange and red light. Against this infernal backdrop, the interior is paradoxically sophisticated — low black leather seating, obsidian bar surfaces, brass fittings. Stalactites hang from the cave ceiling above. The heat and drama are overwhelming. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+  "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+  "special_features": "fireplace, hearth, warm interior focal point",
+  "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "용암동굴",
+    "라운지",
+    "투명바닥",
+    "화산",
+    "극적",
+    "DREAM",
+    "실내"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "interior_time_library",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "시간이 멈춘 도서관",
+  "description": "시간이 멈춘 듯한 도서관. 책과 낙엽이 공중에 떠있고 모래시계의 모래가 공중에 정지된 초현실적 서재 공간.",
+  "preset_prompt": "Professional architectural interior photography of a surrealist library where time has frozen. Hundreds of open books float suspended in mid-air at every level of a vast library, their pages caught mid-flutter. Autumn leaves drift motionless through the space. An hourglass on the central reading table has its sand frozen in mid-flow, the grains suspended in a perfect arc. Candles burn with still flames. A cup of tea steams upward in a frozen spiral. Everything is caught in the exact moment of suspension. The library itself is beautiful — dark wood, warm lamplight, thousands of books. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI visualization, 8K resolution.",
+  "space_type": "home office, study room, work from home space",
+  "int_style": "classic European interior, crown molding, elegant traditional",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "classic European furniture, ornate molding, antique elegant",
+  "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+  "special_features": "floor-to-ceiling bookshelf, library wall, book collection",
+  "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "도서관",
+    "시간정지",
+    "초현실",
+    "책부유",
+    "서재",
+    "DREAM",
+    "실내"
+  ]
+}

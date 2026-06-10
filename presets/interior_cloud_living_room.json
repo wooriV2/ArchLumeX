@@ -1,0 +1,29 @@
+{
+  "name": "interior_cloud_living_room",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "구름 속 거실",
+  "description": "구름 위에 떠있는 완전 투명 거실. 바닥도 유리여서 발 아래 구름이 흐르고 사방이 하늘로 열린 초현실적 공중 공간.",
+  "preset_prompt": "Professional architectural interior photography of a living room suspended inside a cloud above the earth. The entire structure is transparent glass — floor, ceiling, walls. White cumulus clouds drift through and around the room, sometimes obscuring the view, sometimes parting to reveal glimpses of the earth far below and the blue sky above. Impossibly comfortable white sofas seem to float on the glass floor above the clouds. Sunlight refracts through the water droplets of the clouds, creating soft rainbow halos throughout the space. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+  "color_palette": "all-white color scheme, pure white walls ceiling floor, minimal",
+  "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "high key bright airy, overexposed clean white tone",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "구름",
+    "거실",
+    "투명바닥",
+    "공중",
+    "초현실",
+    "DREAM",
+    "실내"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "interior_underwater_bedroom",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "수중 유리 침실",
+  "description": "심해 한가운데 완전 유리로 된 침실. 침대에 누우면 고래와 산호초가 바로 옆에서 유영하는 불가능하고 아름다운 공간.",
+  "preset_prompt": "Professional architectural interior photography of an extraordinary underwater glass bedroom capsule on the ocean floor. The entire room is a seamless glass bubble — floor, walls, ceiling all transparent. A king bed with white linens sits at the center. Outside, a vibrant coral reef teems with tropical fish in electric colors — parrotfish, angelfish, clownfish. A massive whale shark drifts past the glass ceiling above. Shafts of filtered turquoise light penetrate from the distant surface above. Bioluminescent creatures glow softly in the darker depths beyond the reef. Shot on Canon EOS R5, wide angle lens, hyperrealistic CGI architectural visualization, 8K resolution.",
+  "space_type": "bedroom, master bedroom, sleeping space",
+  "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+  "int_material": "marble flooring, luxurious stone, veined marble surface",
+  "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+  "color_palette": "sky blue and white Mediterranean palette, fresh airy",
+  "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "수중",
+    "침실",
+    "유리캡슐",
+    "고래",
+    "산호초",
+    "DREAM",
+    "실내"
+  ]
+}
