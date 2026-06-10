@@ -1,0 +1,248 @@
+"""
+ArchLumeX add_presets_v05.py
+실내 WOW 카테고리 10개 프리셋 — "보는 순간 우와 나오는 실내 장면"
+
+실행: python add_presets_v05.py (preset_builders/ 폴더에서)
+"""
+
+import json
+from pathlib import Path
+
+PRESETS_DIR = Path(__file__).parent.parent / "presets"
+PRESETS_DIR.mkdir(exist_ok=True)
+
+PRESETS = [
+    {
+        "name": "interior_library_cathedral",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "성당형 개인 도서관",
+        "description": "천장까지 5층 높이 책장이 원형으로 둘러싼 성당형 개인 도서관. 중앙 나선 계단과 천창 빛이 극적인 명암을 만드는 압도적 공간.",
+        "preset_prompt": "Professional architectural interior photography of a breathtaking cathedral-style private library. Five stories of floor-to-ceiling bookshelves line the circular walls, accessed by ornate wrought-iron spiral staircases and balconies at each level. A stunning domed skylight at the apex floods the space with golden natural light that casts dramatic shadows through the railings. Dark mahogany wood, brass fittings, and leather-bound books in every direction. A single reading chair and lamp sit at the center of the marble floor below. The scale is humbling — thousands of books reaching toward heaven. Shot on Canon EOS R5, 16mm wide angle lens, f/4, ISO 800, natural light, hyperrealistic interior architectural photography, 8K resolution.",
+        "space_type": "home office, study room, work from home space",
+        "int_style": "classic European interior, crown molding, elegant traditional",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "classic European furniture, ornate molding, antique elegant",
+        "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+        "special_features": "floor-to-ceiling bookshelf, library wall, book collection",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["도서관", "책장", "성당형", "천창", "나선계단", "WOW", "실내"],
+    },
+    {
+        "name": "interior_onsen_forest",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "실내 숲속 온천 욕실",
+        "description": "살아있는 나무와 이끼가 자라는 실내 온천 욕실. 천창으로 쏟아지는 빛과 수증기가 신비로운 숲속 분위기를 만드는 압도적 공간.",
+        "preset_prompt": "Professional architectural interior photography of an extraordinary indoor forest onsen bathroom. Living trees grow through the floor and reach toward a massive glass skylight ceiling, their roots visible through the clear water of a natural stone hot spring pool below. Thick green moss covers the stone walls and floor. Steam rises from the mineral-rich water, catching the dappled sunlight filtering through the tree canopy above. The boundary between inside and outside is completely dissolved. Stone lanterns glow softly in the mist. It feels like bathing in an ancient sacred forest. Shot on Canon EOS R5, wide angle lens, f/4, ISO 1600, natural and ambient light, hyperrealistic interior architectural photography, 8K resolution.",
+        "space_type": "bathroom, main bathroom, wet room",
+        "int_style": "Japanese wabi-sabi interior, natural materials, zen calm, simplicity",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "Japanese low furniture, floor-level seating, zen minimal",
+        "color_palette": "green and natural tones, biophilic nature-inspired palette",
+        "special_features": "indoor plants, lush greenery, biophilic plant decor",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "mood": "biophilic natural mood, organic earthy serene atmosphere",
+        "color_grade": "natural color grading, true-to-life realistic colors",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["온천", "실내숲", "욕실", "이끼", "천창", "WOW", "실내"],
+    },
+    {
+        "name": "interior_cave_living",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "천연 동굴 럭셔리 거실",
+        "description": "천연 암석 동굴 내부에 만들어진 럭셔리 거실. 거친 암벽과 고급 가구의 극적인 대비, 동굴 틈새로 쏟아지는 빛기둥.",
+        "preset_prompt": "Professional architectural interior photography of a stunning luxury living room built inside a natural cave. The raw cave walls and ceiling of dark volcanic rock tower overhead, unchanged and wild. Against this raw geological backdrop, an exquisitely designed living space — deep velvet sofas, a roaring fireplace set into the rock face, Persian rugs on polished concrete floors, hanging pendant lights. Narrow fissures in the cave ceiling above send dramatic shafts of natural daylight spearing down through the space. A full-height glass wall at one end reveals a cliff-edge ocean view. The tension between raw nature and refined luxury is extraordinary. Shot on Canon EOS R5, wide angle lens, f/4, ISO 1600, mixed natural and artificial light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+        "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+        "special_features": "fireplace, hearth, warm interior focal point",
+        "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["동굴", "거실", "럭셔리", "암벽", "빛기둥", "WOW", "실내"],
+    },
+    {
+        "name": "interior_pool_living",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "실내 인피니티풀 거실",
+        "description": "거실 바닥이 그대로 실내 수영장으로 이어지는 공간. 물과 거실의 경계가 사라지고 통창 너머 바다와 하나가 되는 극적인 장면.",
+        "preset_prompt": "Professional architectural interior photography of an extraordinary living room where the floor seamlessly transitions into an indoor infinity pool. The polished stone floor continues directly into crystal-clear blue water without any visible edge or barrier. Floor-to-ceiling glass walls on three sides reveal a panoramic ocean view, and the pool water visually merges with the sea beyond. Minimalist white furniture floats on the dry portion of the floor. Evening light turns everything golden. Reflections of sky and sea dance across the ceiling. The line between inside, outside, pool, and ocean is completely dissolved. Shot on Canon EOS R5, wide angle lens, f/2.8, ISO 800, golden hour light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+        "int_material": "marble flooring, luxurious stone, veined marble surface",
+        "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+        "color_palette": "white and natural wood tones, bright warm neutral palette",
+        "special_features": "swimming pool, architectural pool, water reflection",
+        "lighting": "golden hour warm light, late afternoon sun, amber glow",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "luxurious elegant mood, premium sophisticated atmosphere",
+        "color_grade": "natural color grading, true-to-life realistic colors",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["수영장", "거실", "인피니티풀", "통창", "오션뷰", "WOW", "실내"],
+    },
+    {
+        "name": "interior_greenhouse_dining",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "유리 온실 다이닝룸",
+        "description": "빅토리안 스타일 철제 유리 온실 안의 다이닝룸. 열대 식물이 천장까지 자라고 황금빛 빛이 유리 천장을 통해 쏟아지는 낭만적 식사 공간.",
+        "preset_prompt": "Professional architectural interior photography of a breathtaking Victorian greenhouse dining room. A grand dining table set for an intimate dinner sits at the center of a magnificent iron and glass greenhouse structure. Tropical and exotic plants — palms, ferns, orchids, climbing vines — fill every surface and reach toward the ornate iron and glass ceiling far above. Golden afternoon sunlight floods through the glass panels, casting geometric shadow patterns across the white tablecloth and stone floor. Candles on the table add warm flickering light. Condensation on the glass, the smell of earth and flowers, birdsong. Shot on Canon EOS R5, wide angle lens, f/4, ISO 400, natural golden light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "dining room, formal dining space, dinner area",
+        "int_style": "classic European interior, crown molding, elegant traditional",
+        "int_material": "terracotta tile facade, warm Mediterranean clay finish",
+        "furniture_style": "classic European furniture, ornate molding, antique elegant",
+        "color_palette": "green and natural tones, biophilic nature-inspired palette",
+        "special_features": "indoor plants, lush greenery, biophilic plant decor",
+        "lighting": "golden hour warm light, late afternoon sun, amber glow",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["온실", "다이닝", "유리천장", "열대식물", "빅토리안", "WOW", "실내"],
+    },
+    {
+        "name": "interior_skybridge_bedroom",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "공중 유리 브릿지 침실",
+        "description": "두 건물 사이 공중에 매달린 완전 유리 침실. 침대에 누우면 도시 야경이 발 아래 펼쳐지는 아찔하고 극적인 공간.",
+        "preset_prompt": "Professional architectural interior photography of a spectacular glass bridge bedroom suspended between two skyscrapers high above a city at night. The entire bedroom — floor, walls, ceiling — is constructed from seamless structural glass, offering a 360-degree view of the glittering city far below. A king bed sits at the center, its white linens glowing against the dark city backdrop below. The city lights of thousands of buildings stretch to the horizon in every direction. Clouds drift past at eye level. The sensation of floating in space above the city is visceral and thrilling. Shot on Canon EOS R5, wide angle lens, f/2.8, ISO 3200, city night light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "bedroom, master bedroom, sleeping space",
+        "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+        "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+        "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+        "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["침실", "유리", "공중", "야경", "스카이브릿지", "WOW", "실내"],
+    },
+    {
+        "name": "interior_light_chapel",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "빛의 명상 채플",
+        "description": "안도 타다오 스타일의 콘크리트 명상 공간. 천장과 벽의 좁은 틈으로 쏟아지는 빛기둥이 십자가를 만드는 신성하고 극적인 실내.",
+        "preset_prompt": "Professional architectural interior photography of a transcendent meditation chapel in the style of Tadao Ando. Raw exposed concrete walls and ceiling, perfectly smooth and silent. A single narrow horizontal slit in the far wall channels a blinding shaft of sunlight that creates a luminous cross of light on the concrete surface. The rest of the space is in deep shadow, the contrast absolute. A single wooden bench faces the light. Dust particles float in the light beam, visible and almost tangible. The silence and the light together create an overwhelming sense of the sacred. Inspired by the Church of the Light, Osaka. Shot on Canon EOS R5, 35mm lens, f/8, ISO 400, natural directional light, hyperrealistic architectural photography, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "Japanese wabi-sabi interior, natural materials, zen calm, simplicity",
+        "int_material": "polished concrete floor, smooth industrial finish",
+        "furniture_style": "Japanese low furniture, floor-level seating, zen minimal",
+        "color_palette": "grey and white palette, sophisticated monochromatic scheme",
+        "special_features": "skylight, roof window, natural light from above",
+        "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "mood": "minimal clean restrained mood, quiet understated atmosphere",
+        "color_grade": "black and white, classic monochrome architectural",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["채플", "빛기둥", "콘크리트", "명상", "안도타다오", "WOW", "실내"],
+    },
+    {
+        "name": "interior_treehouse_living",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "나무 관통 실내 거실",
+        "description": "살아있는 거대 나무 줄기가 거실 바닥을 뚫고 천장을 관통하는 공간. 자연과 건축의 경계가 완전히 사라진 바이오필릭 극치.",
+        "preset_prompt": "Professional architectural interior photography of a stunning living room where a massive living oak tree grows directly through the floor and out through the ceiling, its enormous trunk dominating the center of the space. The architecture has been built around and with the tree — the floor curves around the roots, the ceiling has a perfectly fitted circular opening around the trunk. Warm contemporary furniture wraps around the base of the tree. Dappled light filters through the leaves above. The bark is close enough to touch from the sofa. Outside is visible through large windows framing the forest. The tree IS the room. Shot on Canon EOS R5, wide angle lens, f/4, ISO 800, natural daylight, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "warm modern interior, neutral warm tones, cozy contemporary",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "Scandinavian furniture, light oak wood, simple clean design",
+        "color_palette": "green and natural tones, biophilic nature-inspired palette",
+        "special_features": "indoor plants, lush greenery, biophilic plant decor",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "biophilic natural mood, organic earthy serene atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["나무관통", "거실", "바이오필릭", "오크트리", "자연", "WOW", "실내"],
+    },
+    {
+        "name": "interior_aurora_bedroom",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "오로라 뷰 통창 침실",
+        "description": "북극 통나무 캐빈의 통창 침실. 침대에 누운 채 천장까지 이어진 유리창으로 오로라가 온 하늘을 수놓는 꿈같은 장면.",
+        "preset_prompt": "Professional architectural interior photography of a magical Arctic cabin bedroom with an unobstructed floor-to-ceiling glass wall revealing the Northern Lights. The bedroom is warm and intimate — rough-hewn log walls, a bed piled high with reindeer furs and wool blankets, a small wood-burning stove glowing amber in the corner. But the entire far wall is pure glass, and beyond it the aurora borealis blazes in extraordinary green, violet, and teal curtains across the star-filled Arctic sky. The aurora light spills into the bedroom, painting everything in shifting colors. The perfect combination of shelter and sky. Shot on Canon EOS R5, wide angle lens, f/2.8, ISO 3200, aurora and firelight, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "bedroom, master bedroom, sleeping space",
+        "int_style": "rustic country interior, natural wood stone, warm farmhouse",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "rustic country interior, natural wood stone, warm farmhouse",
+        "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+        "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+        "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "cool blue color grade, crisp clean tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["오로라", "침실", "통창", "북극", "통나무", "WOW", "실내"],
+    },
+    {
+        "name": "interior_staircase_light",
+        "category": "WOW",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "빛의 나선 계단 홀",
+        "description": "10층 높이 아트리움을 관통하는 나선형 부유 계단. 천창에서 쏟아지는 빛이 계단을 따라 나선을 그리며 내려오는 건축적 극치.",
+        "preset_prompt": "Professional architectural interior photography of a spectacular ten-story spiral floating staircase in a soaring atrium. The staircase is pure sculpted white concrete with no visible support — each step cantilevers impossibly from a central spine. A massive circular skylight at the apex of the atrium pours brilliant white light down through the entire height of the space, and the spiral staircase catches and directs this light in a perfect helix from ceiling to floor. Looking up or down the staircase creates a hypnotic infinite spiral of light and shadow. The walls are pure white plaster. The floor far below is polished marble. Shot on Canon EOS R5, 16mm ultra-wide lens, f/8, ISO 400, natural skylight, hyperrealistic architectural photography, 8K resolution.",
+        "space_type": "staircase, stairwell, interior stairs",
+        "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+        "int_material": "marble flooring, luxurious stone, veined marble surface",
+        "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+        "color_palette": "all-white color scheme, pure white walls ceiling floor, minimal",
+        "special_features": "floating staircase, open riser stairs, sculptural staircase",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "high key bright airy, overexposed clean white tone",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["계단", "나선", "아트리움", "빛", "부유계단", "WOW", "실내"],
+    },
+]
+
+
+def main():
+    created = 0
+    skipped = 0
+
+    for preset in PRESETS:
+        path = PRESETS_DIR / f"{preset['name']}.json"
+        if path.exists():
+            print(f"  SKIP  {preset['name']}.json (이미 존재)")
+            skipped += 1
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(preset, f, ensure_ascii=False, indent=2)
+            print(f"  OK    {preset['name']}.json")
+            created += 1
+
+    print(f"\n완료: {created}개 생성, {skipped}개 건너뜀")
+    print(f"총 프리셋: {len(list(PRESETS_DIR.glob('*.json')))}개")
+
+
+if __name__ == "__main__":
+    main()
