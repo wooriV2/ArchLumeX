@@ -1,0 +1,29 @@
+{
+  "name": "interior_pool_living",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "실내 인피니티풀 거실",
+  "description": "거실 바닥이 그대로 실내 수영장으로 이어지는 공간. 물과 거실의 경계가 사라지고 통창 너머 바다와 하나가 되는 극적인 장면.",
+  "preset_prompt": "Professional architectural interior photography of an extraordinary living room where the floor seamlessly transitions into an indoor infinity pool. The polished stone floor continues directly into crystal-clear blue water without any visible edge or barrier. Floor-to-ceiling glass walls on three sides reveal a panoramic ocean view, and the pool water visually merges with the sea beyond. Minimalist white furniture floats on the dry portion of the floor. Evening light turns everything golden. Reflections of sky and sea dance across the ceiling. The line between inside, outside, pool, and ocean is completely dissolved. Shot on Canon EOS R5, wide angle lens, f/2.8, ISO 800, golden hour light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+  "int_material": "marble flooring, luxurious stone, veined marble surface",
+  "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+  "color_palette": "white and natural wood tones, bright warm neutral palette",
+  "special_features": "swimming pool, architectural pool, water reflection",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "luxurious elegant mood, premium sophisticated atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "수영장",
+    "거실",
+    "인피니티풀",
+    "통창",
+    "오션뷰",
+    "WOW",
+    "실내"
+  ]
+}

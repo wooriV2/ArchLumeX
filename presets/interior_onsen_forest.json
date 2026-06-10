@@ -1,0 +1,29 @@
+{
+  "name": "interior_onsen_forest",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "실내 숲속 온천 욕실",
+  "description": "살아있는 나무와 이끼가 자라는 실내 온천 욕실. 천창으로 쏟아지는 빛과 수증기가 신비로운 숲속 분위기를 만드는 압도적 공간.",
+  "preset_prompt": "Professional architectural interior photography of an extraordinary indoor forest onsen bathroom. Living trees grow through the floor and reach toward a massive glass skylight ceiling, their roots visible through the clear water of a natural stone hot spring pool below. Thick green moss covers the stone walls and floor. Steam rises from the mineral-rich water, catching the dappled sunlight filtering through the tree canopy above. The boundary between inside and outside is completely dissolved. Stone lanterns glow softly in the mist. It feels like bathing in an ancient sacred forest. Shot on Canon EOS R5, wide angle lens, f/4, ISO 1600, natural and ambient light, hyperrealistic interior architectural photography, 8K resolution.",
+  "space_type": "bathroom, main bathroom, wet room",
+  "int_style": "Japanese wabi-sabi interior, natural materials, zen calm, simplicity",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "Japanese low furniture, floor-level seating, zen minimal",
+  "color_palette": "green and natural tones, biophilic nature-inspired palette",
+  "special_features": "indoor plants, lush greenery, biophilic plant decor",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "온천",
+    "실내숲",
+    "욕실",
+    "이끼",
+    "천창",
+    "WOW",
+    "실내"
+  ]
+}

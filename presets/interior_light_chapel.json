@@ -1,0 +1,29 @@
+{
+  "name": "interior_light_chapel",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "빛의 명상 채플",
+  "description": "안도 타다오 스타일의 콘크리트 명상 공간. 천장과 벽의 좁은 틈으로 쏟아지는 빛기둥이 십자가를 만드는 신성하고 극적인 실내.",
+  "preset_prompt": "Professional architectural interior photography of a transcendent meditation chapel in the style of Tadao Ando. Raw exposed concrete walls and ceiling, perfectly smooth and silent. A single narrow horizontal slit in the far wall channels a blinding shaft of sunlight that creates a luminous cross of light on the concrete surface. The rest of the space is in deep shadow, the contrast absolute. A single wooden bench faces the light. Dust particles float in the light beam, visible and almost tangible. The silence and the light together create an overwhelming sense of the sacred. Inspired by the Church of the Light, Osaka. Shot on Canon EOS R5, 35mm lens, f/8, ISO 400, natural directional light, hyperrealistic architectural photography, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "Japanese wabi-sabi interior, natural materials, zen calm, simplicity",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "Japanese low furniture, floor-level seating, zen minimal",
+  "color_palette": "grey and white palette, sophisticated monochromatic scheme",
+  "special_features": "skylight, roof window, natural light from above",
+  "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "mood": "minimal clean restrained mood, quiet understated atmosphere",
+  "color_grade": "black and white, classic monochrome architectural",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "채플",
+    "빛기둥",
+    "콘크리트",
+    "명상",
+    "안도타다오",
+    "WOW",
+    "실내"
+  ]
+}

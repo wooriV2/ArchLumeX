@@ -1,0 +1,29 @@
+{
+  "name": "interior_cave_living",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "천연 동굴 럭셔리 거실",
+  "description": "천연 암석 동굴 내부에 만들어진 럭셔리 거실. 거친 암벽과 고급 가구의 극적인 대비, 동굴 틈새로 쏟아지는 빛기둥.",
+  "preset_prompt": "Professional architectural interior photography of a stunning luxury living room built inside a natural cave. The raw cave walls and ceiling of dark volcanic rock tower overhead, unchanged and wild. Against this raw geological backdrop, an exquisitely designed living space — deep velvet sofas, a roaring fireplace set into the rock face, Persian rugs on polished concrete floors, hanging pendant lights. Narrow fissures in the cave ceiling above send dramatic shafts of natural daylight spearing down through the space. A full-height glass wall at one end reveals a cliff-edge ocean view. The tension between raw nature and refined luxury is extraordinary. Shot on Canon EOS R5, wide angle lens, f/4, ISO 1600, mixed natural and artificial light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "modern luxury interior, premium materials, hotel-like sophistication",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+  "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+  "special_features": "fireplace, hearth, warm interior focal point",
+  "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "동굴",
+    "거실",
+    "럭셔리",
+    "암벽",
+    "빛기둥",
+    "WOW",
+    "실내"
+  ]
+}

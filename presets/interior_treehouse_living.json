@@ -1,0 +1,29 @@
+{
+  "name": "interior_treehouse_living",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "나무 관통 실내 거실",
+  "description": "살아있는 거대 나무 줄기가 거실 바닥을 뚫고 천장을 관통하는 공간. 자연과 건축의 경계가 완전히 사라진 바이오필릭 극치.",
+  "preset_prompt": "Professional architectural interior photography of a stunning living room where a massive living oak tree grows directly through the floor and out through the ceiling, its enormous trunk dominating the center of the space. The architecture has been built around and with the tree — the floor curves around the roots, the ceiling has a perfectly fitted circular opening around the trunk. Warm contemporary furniture wraps around the base of the tree. Dappled light filters through the leaves above. The bark is close enough to touch from the sofa. Outside is visible through large windows framing the forest. The tree IS the room. Shot on Canon EOS R5, wide angle lens, f/4, ISO 800, natural daylight, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "warm modern interior, neutral warm tones, cozy contemporary",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "Scandinavian furniture, light oak wood, simple clean design",
+  "color_palette": "green and natural tones, biophilic nature-inspired palette",
+  "special_features": "indoor plants, lush greenery, biophilic plant decor",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "나무관통",
+    "거실",
+    "바이오필릭",
+    "오크트리",
+    "자연",
+    "WOW",
+    "실내"
+  ]
+}

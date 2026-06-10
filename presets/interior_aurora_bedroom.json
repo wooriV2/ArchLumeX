@@ -1,0 +1,29 @@
+{
+  "name": "interior_aurora_bedroom",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "오로라 뷰 통창 침실",
+  "description": "북극 통나무 캐빈의 통창 침실. 침대에 누운 채 천장까지 이어진 유리창으로 오로라가 온 하늘을 수놓는 꿈같은 장면.",
+  "preset_prompt": "Professional architectural interior photography of a magical Arctic cabin bedroom with an unobstructed floor-to-ceiling glass wall revealing the Northern Lights. The bedroom is warm and intimate — rough-hewn log walls, a bed piled high with reindeer furs and wool blankets, a small wood-burning stove glowing amber in the corner. But the entire far wall is pure glass, and beyond it the aurora borealis blazes in extraordinary green, violet, and teal curtains across the star-filled Arctic sky. The aurora light spills into the bedroom, painting everything in shifting colors. The perfect combination of shelter and sky. Shot on Canon EOS R5, wide angle lens, f/2.8, ISO 3200, aurora and firelight, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "bedroom, master bedroom, sleeping space",
+  "int_style": "rustic country interior, natural wood stone, warm farmhouse",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "rustic country interior, natural wood stone, warm farmhouse",
+  "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+  "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+  "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "오로라",
+    "침실",
+    "통창",
+    "북극",
+    "통나무",
+    "WOW",
+    "실내"
+  ]
+}

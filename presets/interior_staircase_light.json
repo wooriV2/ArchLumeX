@@ -1,0 +1,29 @@
+{
+  "name": "interior_staircase_light",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "빛의 나선 계단 홀",
+  "description": "10층 높이 아트리움을 관통하는 나선형 부유 계단. 천창에서 쏟아지는 빛이 계단을 따라 나선을 그리며 내려오는 건축적 극치.",
+  "preset_prompt": "Professional architectural interior photography of a spectacular ten-story spiral floating staircase in a soaring atrium. The staircase is pure sculpted white concrete with no visible support — each step cantilevers impossibly from a central spine. A massive circular skylight at the apex of the atrium pours brilliant white light down through the entire height of the space, and the spiral staircase catches and directs this light in a perfect helix from ceiling to floor. Looking up or down the staircase creates a hypnotic infinite spiral of light and shadow. The walls are pure white plaster. The floor far below is polished marble. Shot on Canon EOS R5, 16mm ultra-wide lens, f/8, ISO 400, natural skylight, hyperrealistic architectural photography, 8K resolution.",
+  "space_type": "staircase, stairwell, interior stairs",
+  "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+  "int_material": "marble flooring, luxurious stone, veined marble surface",
+  "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+  "color_palette": "all-white color scheme, pure white walls ceiling floor, minimal",
+  "special_features": "floating staircase, open riser stairs, sculptural staircase",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "high key bright airy, overexposed clean white tone",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "계단",
+    "나선",
+    "아트리움",
+    "빛",
+    "부유계단",
+    "WOW",
+    "실내"
+  ]
+}

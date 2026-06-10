@@ -1,0 +1,29 @@
+{
+  "name": "interior_skybridge_bedroom",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "공중 유리 브릿지 침실",
+  "description": "두 건물 사이 공중에 매달린 완전 유리 침실. 침대에 누우면 도시 야경이 발 아래 펼쳐지는 아찔하고 극적인 공간.",
+  "preset_prompt": "Professional architectural interior photography of a spectacular glass bridge bedroom suspended between two skyscrapers high above a city at night. The entire bedroom — floor, walls, ceiling — is constructed from seamless structural glass, offering a 360-degree view of the glittering city far below. A king bed sits at the center, its white linens glowing against the dark city backdrop below. The city lights of thousands of buildings stretch to the horizon in every direction. Clouds drift past at eye level. The sensation of floating in space above the city is visceral and thrilling. Shot on Canon EOS R5, wide angle lens, f/2.8, ISO 3200, city night light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "bedroom, master bedroom, sleeping space",
+  "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+  "int_material": "polished concrete floor, smooth industrial finish",
+  "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+  "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+  "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+  "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "침실",
+    "유리",
+    "공중",
+    "야경",
+    "스카이브릿지",
+    "WOW",
+    "실내"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "interior_greenhouse_dining",
+  "category": "WOW",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "유리 온실 다이닝룸",
+  "description": "빅토리안 스타일 철제 유리 온실 안의 다이닝룸. 열대 식물이 천장까지 자라고 황금빛 빛이 유리 천장을 통해 쏟아지는 낭만적 식사 공간.",
+  "preset_prompt": "Professional architectural interior photography of a breathtaking Victorian greenhouse dining room. A grand dining table set for an intimate dinner sits at the center of a magnificent iron and glass greenhouse structure. Tropical and exotic plants — palms, ferns, orchids, climbing vines — fill every surface and reach toward the ornate iron and glass ceiling far above. Golden afternoon sunlight floods through the glass panels, casting geometric shadow patterns across the white tablecloth and stone floor. Candles on the table add warm flickering light. Condensation on the glass, the smell of earth and flowers, birdsong. Shot on Canon EOS R5, wide angle lens, f/4, ISO 400, natural golden light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "dining room, formal dining space, dinner area",
+  "int_style": "classic European interior, crown molding, elegant traditional",
+  "int_material": "terracotta tile facade, warm Mediterranean clay finish",
+  "furniture_style": "classic European furniture, ornate molding, antique elegant",
+  "color_palette": "green and natural tones, biophilic nature-inspired palette",
+  "special_features": "indoor plants, lush greenery, biophilic plant decor",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "온실",
+    "다이닝",
+    "유리천장",
+    "열대식물",
+    "빅토리안",
+    "WOW",
+    "실내"
+  ]
+}
