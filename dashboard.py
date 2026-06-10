@@ -1,8 +1,7 @@
-﻿"""
-ArchLumeX Dashboard v1.2
+"""
+ArchLumeX Dashboard v1.3
 실행: streamlit run dashboard.py
-건축/인테리어 AI 이미지 프롬프트 엔진
-v1.2: 셀렉박스 글자색 수정, 실사 강화
+v1.3: 프리셋 탭 전면 개편 — 2단계 탭 + 드롭다운 구조
 """
 
 import sys
@@ -15,7 +14,7 @@ load_dotenv()
 sys.path.insert(0, str(Path(__file__).parent))
 
 import streamlit as st
-from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt
+from core.builders import build_gemini_prompt, build_chatgpt_prompt, build_midjourney_prompt, QUALITY_GEMINI, QUALITY_CHATGPT, QUALITY_MJ
 from core.data import (
     ASPECT_RATIOS,
     BUILDING_TYPES, ARCHITECTURAL_STYLES, EXTERIOR_MATERIALS,
@@ -71,12 +70,11 @@ h1, h2, h3, h4, h5 {{ color: {GOLD} !important; letter-spacing: 1.5px !important
 .stSelectbox > div > div {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; border-radius: 6px !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
 .stSelectbox > div > div:hover {{ border-color: rgba(184,150,110,0.4) !important; }}
 .stSelectbox label {{ color: {GOLD} !important; font-size: 0.68rem !important; letter-spacing: 1.2px !important; text-transform: uppercase !important; font-weight: 600 !important; }}
-.stSelectbox span, .stSelectbox p, .stSelectbox div[data-baseweb] span {{ color: {TEXT} !important; }}
+.stSelectbox span, .stSelectbox p {{ color: {TEXT} !important; }}
 [data-baseweb="select"] span {{ color: {TEXT} !important; }}
 [data-baseweb="menu"] {{ background-color: {BG_INPUT} !important; border: 1px solid {BORDER} !important; }}
 [data-baseweb="menu"] li {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; font-size: 0.8rem !important; }}
 [data-baseweb="menu"] li:hover {{ background-color: #383838 !important; color: {GOLD} !important; }}
-[data-baseweb="option"] {{ background-color: {BG_INPUT} !important; color: {TEXT} !important; }}
 [role="option"] {{ color: {TEXT} !important; background-color: {BG_INPUT} !important; }}
 [role="option"]:hover {{ background-color: #383838 !important; color: {GOLD} !important; }}
 [aria-selected="true"][role="option"] {{ background-color: #333 !important; color: {GOLD} !important; }}
@@ -93,24 +91,24 @@ p, li, .stMarkdown {{ color: {TEXT} !important; font-size: 0.82rem !important; }
 ::-webkit-scrollbar {{ width: 4px; }}
 ::-webkit-scrollbar-track {{ background: {BG}; }}
 ::-webkit-scrollbar-thumb {{ background: {BORDER}; border-radius: 2px; }}
-.preset-card {{
+.preset-info-card {{
     background: {BG_CARD};
     border: 1px solid {BORDER};
     border-radius: 10px;
-    padding: 16px;
-    margin-bottom: 12px;
-    transition: border-color 0.2s;
+    padding: 20px 24px;
+    margin-bottom: 16px;
 }}
-.preset-card:hover {{ border-color: rgba(184,150,110,0.5); }}
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown('''
 <div style="padding:8px 0 20px;">
   <div style="font-size:1.6rem;font-weight:700;letter-spacing:8px;color:#b8966e;">🏛️ ArchLumeX</div>
-  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Architecture & Interior Image Engine · v1.2</div>
+  <div style="font-size:0.65rem;letter-spacing:3px;color:#555;margin-top:4px;text-transform:uppercase;">AI Architecture & Interior Image Engine · v1.3</div>
 </div>
 ''', unsafe_allow_html=True)
+
+ALL_PRESETS = load_all_presets()
 
 with st.sidebar:
     st.markdown("### ⚙️ 전역 설정")
@@ -143,12 +141,16 @@ with st.sidebar:
         st.warning("태그 나열 + --파라미터 방식.")
     st.markdown("---")
     st.markdown("### 🏗️ 엔진 정보")
-    all_presets = load_all_presets()
-    st.markdown(f"**프리셋:** `{len(all_presets)}개`")
+    ext_count  = len([p for p in ALL_PRESETS if p.get("mode","exterior") == "exterior"])
+    int_count  = len([p for p in ALL_PRESETS if p.get("mode","exterior") == "interior"])
+    wow_count  = len([p for p in ALL_PRESETS if p.get("category") == "WOW"])
+    live_count = len([p for p in ALL_PRESETS if p.get("category") == "LIVE"])
+    dream_count= len([p for p in ALL_PRESETS if p.get("category") == "DREAM"])
+    st.markdown(f"**전체 프리셋:** `{len(ALL_PRESETS)}개`")
+    st.markdown(f"**실외:** `{ext_count}개` · **실내:** `{int_count}개`")
+    st.markdown(f"**WOW:** `{wow_count}` · **LIVE:** `{live_count}` · **DREAM:** `{dream_count}`")
     st.markdown(f"**실외 스타일:** `{len(ARCHITECTURAL_STYLES)}종`")
     st.markdown(f"**실내 스타일:** `{len(INTERIOR_STYLES)}종`")
-    st.markdown(f"**건물 유형:** `{len(BUILDING_TYPES)}종`")
-    st.markdown(f"**공간 유형:** `{len(SPACE_TYPES)}종`")
 
 
 def get_prompt(data: dict, mode: str) -> str:
@@ -160,6 +162,24 @@ def get_prompt(data: dict, mode: str) -> str:
         return build_midjourney_prompt(data, global_aspect, mode)
 
 
+def build_preset_prompt(preset: dict) -> str:
+    """프리셋 → 플랫폼별 프롬프트 생성"""
+    base = preset.get("preset_prompt", "")
+    if global_platform == "Gemini":
+        return f"{base} {QUALITY_GEMINI}"
+    elif global_platform == "ChatGPT (DALL-E)":
+        return f"{base} {QUALITY_CHATGPT}."
+    else:
+        ar_map = {
+            "세로 2:3 — 외관 기본 ★": "2:3", "정방형 1:1 — 인스타 피드": "1:1",
+            "가로 16:9 — 와이드 전경": "16:9", "가로 4:3 — 화보/카탈로그": "4:3",
+            "가로 3:2 — 클래식 가로": "3:2", "세로 9:16 — 모바일/릴스": "9:16",
+        }
+        ar = ar_map.get(global_aspect, "2:3")
+        return f"{base} {QUALITY_MJ} --ar {ar} --style raw --q 2 --v 6"
+
+
+# ─── 탭 ──────────────────────────────────────────────────
 tab_ext, tab_int, tab_rand, tab_preset = st.tabs([
     "🏠 실외 (Exterior)", "🛋️ 실내 (Interior)", "🎲 랜덤", "✨ 프리셋"
 ])
@@ -399,80 +419,94 @@ with tab_rand:
 
 
 # ══════════════════════════════════════════════════════════
-# 탭 4: 프리셋
+# 탭 4: 프리셋 — 2단계 탭 + 드롭다운
 # ══════════════════════════════════════════════════════════
 with tab_preset:
     st.markdown("### ✨ 큐레이션 프리셋")
-    st.caption("SS tier 건축 장면 — 클릭 한 번으로 최적화된 프롬프트 생성")
+    st.caption("대분류 → 카테고리 선택 → 프리셋 선택 → 프롬프트 생성")
 
-    all_presets = load_all_presets()
-
-    if not all_presets:
+    if not ALL_PRESETS:
         st.warning("프리셋이 없습니다. `python add_presets_v01.py` 를 먼저 실행하세요.")
     else:
-        categories = ["전체"] + sorted(list(set(p.get("category", "") for p in all_presets)))
-        col_f1, col_f2, _ = st.columns([1, 1, 2])
-        with col_f1:
-            filter_cat = st.selectbox("🗂️ 카테고리", categories, key="filter_cat")
-        with col_f2:
-            filter_tier = st.selectbox("⭐ 티어", ["전체", "SS", "S", "A"], key="filter_tier")
+        # ── 1단계: 실외 / 실내 탭 ──
+        mode_tab_ext, mode_tab_int = st.tabs(["🏠 실외 (Exterior)", "🛋️ 실내 (Interior)"])
 
-        filtered = all_presets
-        if filter_cat != "전체":
-            filtered = [p for p in filtered if p.get("category") == filter_cat]
-        if filter_tier != "전체":
-            filtered = [p for p in filtered if p.get("tier") == filter_tier]
+        for mode_tab, mode_key, mode_label in [
+            (mode_tab_ext, "exterior", "실외"),
+            (mode_tab_int, "interior", "실내"),
+        ]:
+            with mode_tab:
+                # mode 필터
+                mode_presets = [p for p in ALL_PRESETS if p.get("mode", "exterior") == mode_key]
 
-        st.markdown(f"**{len(filtered)}개** 프리셋")
-        st.markdown("---")
+                if not mode_presets:
+                    st.info(f"{mode_label} 프리셋이 없습니다.")
+                    continue
 
-        if "preset_prompt" not in st.session_state:
-            st.session_state.preset_prompt = ""
-        if "preset_selected" not in st.session_state:
-            st.session_state.preset_selected = ""
+                # ── 2단계: 카테고리 탭 ──
+                categories = sorted(list(set(p.get("category", "") for p in mode_presets)))
 
-        cols = st.columns(3)
-        for i, preset in enumerate(filtered):
-            with cols[i % 3]:
-                tier = preset.get("tier", "")
-                cat  = preset.get("category", "")
-                tier_color = {"SS": "#FFD700", "S": "#C0C0C0", "A": "#CD7F32"}.get(tier, GOLD)
-                cat_color  = {"WOW": "#ff6b6b", "LIVE": "#51cf66", "DREAM": "#74c0fc"}.get(cat, GOLD)
+                # 카테고리별 카운트
+                cat_labels = []
+                for cat in categories:
+                    cnt = len([p for p in mode_presets if p.get("category") == cat])
+                    emoji = {"WOW": "👀", "LIVE": "🏠", "DREAM": "🚀"}.get(cat, "✨")
+                    cat_labels.append(f"{emoji} {cat} ({cnt})")
 
-                st.markdown(f"""
-                <div class="preset-card">
-                  <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-                    <span style="color:{tier_color};font-weight:700;font-size:0.75rem;">⭐ {tier}</span>
-                    <span style="color:{cat_color};font-size:0.7rem;letter-spacing:1px;">{cat}</span>
-                  </div>
-                  <div style="color:{GOLD};font-weight:600;font-size:0.9rem;margin-bottom:4px;">{preset.get('label','')}</div>
-                  <div style="color:{TEXT_DIM};font-size:0.72rem;line-height:1.5;">{preset.get('description','')}</div>
-                  <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:4px;">
-                    {''.join(f'<span style="background:#2a2a2a;color:#888;font-size:0.65rem;padding:2px 6px;border-radius:3px;">#{t}</span>' for t in preset.get('tags',[])[:4])}
-                  </div>
-                </div>
-                """, unsafe_allow_html=True)
+                cat_tabs = st.tabs(cat_labels)
 
-                if st.button("✨ 프롬프트 생성", key=f"preset_btn_{i}", use_container_width=True):
-                    from core.builders import QUALITY_GEMINI, QUALITY_CHATGPT, QUALITY_MJ
-                    prompt = preset.get("preset_prompt", "")
-                    if global_platform == "Gemini":
-                        prompt = f"{prompt} {QUALITY_GEMINI}"
-                    elif global_platform == "ChatGPT (DALL-E)":
-                        prompt = f"{prompt} {QUALITY_CHATGPT}."
-                    else:
-                        ar_map = {"세로 2:3 — 외관 기본 ★":"2:3","정방형 1:1 — 인스타 피드":"1:1","가로 16:9 — 와이드 전경":"16:9","가로 4:3 — 화보/카탈로그":"4:3","가로 3:2 — 클래식 가로":"3:2","세로 9:16 — 모바일/릴스":"9:16"}
-                        ar = ar_map.get(global_aspect, "2:3")
-                        prompt = f"{prompt} {QUALITY_MJ} --ar {ar} --style raw --q 2 --v 6"
-                    st.session_state.preset_prompt = prompt
-                    st.session_state.preset_selected = preset.get("label", "")
+                for cat_tab, cat in zip(cat_tabs, categories):
+                    with cat_tab:
+                        cat_presets = [p for p in mode_presets if p.get("category") == cat]
 
-        if st.session_state.preset_prompt:
-            st.markdown("---")
-            st.markdown(f"**선택된 프리셋:** `{st.session_state.preset_selected}`")
-            st.text_area("생성된 프롬프트", value=st.session_state.preset_prompt, height=180, key="preset_ta")
-            st.code(st.session_state.preset_prompt, language=None)
-            st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
+                        cat_color = {"WOW": "#ff6b6b", "LIVE": "#51cf66", "DREAM": "#74c0fc"}.get(cat, GOLD)
+                        cat_desc  = {"WOW": "스크롤이 멈추는 압도적 장면", "LIVE": "실제로 짓고 살고 싶은 현실 건축", "DREAM": "환상, 꿈, 말도 안 되는 아름다움"}.get(cat, "")
+
+                        st.markdown(f'<p style="color:{cat_color};font-size:0.78rem;margin-bottom:12px;">● {cat_desc}</p>', unsafe_allow_html=True)
+
+                        # ── 3단계: 드롭다운 선택 ──
+                        preset_options = {f"⭐ {p.get('label', p['name'])}": p for p in cat_presets}
+                        dropdown_key   = f"preset_select_{mode_key}_{cat}"
+                        selected_label = st.selectbox(
+                            f"프리셋 선택 ({len(cat_presets)}개)",
+                            options=list(preset_options.keys()),
+                            key=dropdown_key
+                        )
+
+                        selected_preset = preset_options[selected_label]
+
+                        # 선택된 프리셋 정보 표시
+                        st.markdown(f"""
+                        <div class="preset-info-card">
+                          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                            <span style="color:{GOLD};font-weight:600;font-size:1rem;">{selected_preset.get('label','')}</span>
+                            <span style="color:#FFD700;font-size:0.75rem;">⭐ {selected_preset.get('tier','')}</span>
+                          </div>
+                          <div style="color:{TEXT_DIM};font-size:0.78rem;line-height:1.6;margin-bottom:10px;">{selected_preset.get('description','')}</div>
+                          <div style="display:flex;flex-wrap:wrap;gap:4px;">
+                            {''.join(f'<span style="background:#2a2a2a;color:#888;font-size:0.65rem;padding:2px 8px;border-radius:3px;">#{t}</span>' for t in selected_preset.get('tags',[]))}
+                          </div>
+                        </div>
+                        """, unsafe_allow_html=True)
+
+                        # 생성 버튼
+                        btn_key = f"gen_btn_{mode_key}_{cat}"
+                        if st.button("✨ 프롬프트 생성", type="primary", use_container_width=False, key=btn_key):
+                            st.session_state.preset_prompt     = build_preset_prompt(selected_preset)
+                            st.session_state.preset_selected   = selected_preset.get("label", "")
+
+                        # 결과 출력
+                        if st.session_state.get("preset_prompt") and st.session_state.get("preset_selected") == selected_preset.get("label"):
+                            st.markdown("---")
+                            st.markdown(f"**선택된 프리셋:** `{st.session_state.preset_selected}`")
+                            st.text_area("생성된 프롬프트", value=st.session_state.preset_prompt, height=180, key=f"preset_ta_{mode_key}_{cat}")
+                            st.code(st.session_state.preset_prompt, language=None)
+                            st.caption(f"👆 복사 후 {global_platform}에 붙여넣으세요!")
+
+if "preset_prompt" not in st.session_state:
+    st.session_state.preset_prompt = ""
+if "preset_selected" not in st.session_state:
+    st.session_state.preset_selected = ""
 
 st.markdown("---")
-st.markdown(f'<div style="text-align:center;color:#444;font-size:0.75rem;">🏛️ ArchLumeX v1.2 — AI Architecture & Interior Image Engine</div>', unsafe_allow_html=True)
+st.markdown(f'<div style="text-align:center;color:#444;font-size:0.75rem;">🏛️ ArchLumeX v1.3 — AI Architecture & Interior Image Engine</div>', unsafe_allow_html=True)
