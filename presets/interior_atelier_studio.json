@@ -1,0 +1,29 @@
+{
+  "name": "interior_atelier_studio",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "천창 아틀리에 작업실",
+  "description": "파리 스타일 아틀리에 작업실. 천창으로 쏟아지는 화가의 빛, 캔버스와 물감, 식물이 가득한 창조적 공간.",
+  "preset_prompt": "Professional architectural interior photography of a dreamy Parisian artist's atelier studio. A massive north-facing skylight fills the tall-ceilinged space with the perfect cool diffused painter's light. Unfinished canvases lean against white walls. A large oak work table is scattered with paint tubes, brushes in ceramic jars, sketchbooks. Lush tropical plants crowd every corner and windowsill — monstera, fiddle-leaf fig, trailing pothos. A worn Persian rug on the stone floor. Afternoon light creates long soft shadows. The creative chaos is perfectly beautiful. Shot on Canon EOS R5, 24mm lens, f/4, ISO 800, natural skylight, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "home office, study room, work from home space",
+  "int_style": "bohemian interior, layered textiles, eclectic patterns, free-spirited",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "mid-century modern furniture, organic curves, tapered legs, retro",
+  "color_palette": "green and natural tones, biophilic nature-inspired palette",
+  "special_features": "skylight, roof window, natural light from above",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "아틀리에",
+    "작업실",
+    "천창",
+    "파리",
+    "식물",
+    "LIVE",
+    "살고싶다"
+  ]
+}

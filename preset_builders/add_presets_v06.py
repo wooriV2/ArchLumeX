@@ -1,0 +1,248 @@
+"""
+ArchLumeX add_presets_v06.py
+실내 LIVE 카테고리 10개 프리셋 — "실제로 이렇게 살고 싶은 공간"
+
+실행: python add_presets_v06.py (preset_builders/ 폴더에서)
+"""
+
+import json
+from pathlib import Path
+
+PRESETS_DIR = Path(__file__).parent.parent / "presets"
+PRESETS_DIR.mkdir(exist_ok=True)
+
+PRESETS = [
+    {
+        "name": "interior_scandi_kitchen_morning",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "스칸디나비아 아침 주방",
+        "description": "화이트+라이트오크 스칸디나비아 주방에 아침햇살이 쏟아지는 장면. 커피 한 잔과 함께 시작하고 싶은 하루의 이상적인 공간.",
+        "preset_prompt": "Professional architectural interior photography of a perfect Scandinavian kitchen on a bright morning. White shaker cabinets, light oak open shelving, a pale marble countertop. Morning sunlight streams through large windows, casting warm golden light across the white surfaces and highlighting the steam rising from a fresh cup of coffee on the island. A simple bunch of wildflowers in a ceramic vase. Potted herbs on the windowsill. Everything is clean, calm, and quietly beautiful. The outside shows snow-dusted pine trees. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 400, natural morning light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "kitchen, cooking space, culinary area",
+        "int_style": "Scandinavian interior, hygge, light wood, white, cozy warmth",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "Scandinavian furniture, light oak wood, simple clean design",
+        "color_palette": "white and natural wood tones, bright warm neutral palette",
+        "special_features": "indoor plants, lush greenery, biophilic plant decor",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+        "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+        "color_grade": "high key bright airy, overexposed clean white tone",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["주방", "스칸디나비아", "아침", "화이트오크", "커피", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_fireplace_library",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "벽난로 서재 독서 공간",
+        "description": "바닥부터 천장까지 책장, 가죽 체스터필드 소파, 활활 타는 벽난로. 비 오는 날 오후 완벽한 독서 공간의 극치.",
+        "preset_prompt": "Professional architectural interior photography of the perfect reading room. Floor-to-ceiling bookshelves on every wall, filled with thousands of books. A deep green leather Chesterfield sofa faces a large stone fireplace with a roaring fire. A tartan wool throw, a half-drunk glass of whisky, and an open book on the side table. Warm lamplight mingles with the firelight. Rain streaks the single tall window. A Persian rug on the dark hardwood floor. The smell of old paper and wood smoke is almost tangible. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 1600, firelight and lamplight, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "home office, study room, work from home space",
+        "int_style": "classic European interior, crown molding, elegant traditional",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "classic European furniture, ornate molding, antique elegant",
+        "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+        "special_features": "fireplace, hearth, warm interior focal point",
+        "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["서재", "벽난로", "책장", "가죽소파", "비오는날", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_mountain_bedroom",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "산뷰 통창 침실 아침",
+        "description": "통창 너머 설산이 펼쳐지는 목조 침실. 아침 안개가 걷히며 산봉우리가 드러나는 순간, 포근한 이불 속에서 바라보는 최고의 뷰.",
+        "preset_prompt": "Professional architectural interior photography of a serene mountain bedroom at dawn. A king-size bed with crisp white linen and a chunky knit blanket faces an enormous floor-to-ceiling window that fills the entire far wall. Beyond the glass, snow-capped mountain peaks emerge from dissolving morning mist in the golden early light. The bedroom walls are warm natural timber. A wood-burning stove glows in the corner. The room is simple and perfect — nothing competes with the view. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 800, dawn natural light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "bedroom, master bedroom, sleeping space",
+        "int_style": "Scandinavian interior, hygge, light wood, white, cozy warmth",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "Scandinavian furniture, light wood, simple clean design",
+        "color_palette": "white and natural wood tones, bright warm neutral palette",
+        "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "high key bright airy, overexposed clean white tone",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["침실", "설산뷰", "통창", "아침", "목조", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_japanese_bathroom",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "일본식 히노키 욕실",
+        "description": "향기로운 히노키 목재로 만든 일본 료칸 스타일 욕실. 정원이 보이는 창가에서 즐기는 깊은 목욕통과 대나무 조경의 완벽한 조화.",
+        "preset_prompt": "Professional architectural interior photography of a sublime Japanese hinoki cypress bathroom in the style of a luxury ryokan. The entire room is clad in fragrant pale golden hinoki wood — walls, floor, deep soaking tub. A large sliding shoji screen opens to reveal a private moss and bamboo garden just outside. Soft afternoon light filters through the shoji paper, casting gentle shadows. A single ceramic bowl holds a folded towel. Steam rises from the clear water in the deep square tub. The grain of the wood is extraordinary. Pure Japanese minimalism at its most beautiful. Shot on Canon EOS R5, 35mm lens, f/4, ISO 800, soft diffused light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "bathroom, main bathroom, wet room",
+        "int_style": "Japanese wabi-sabi interior, natural materials, zen calm, simplicity",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "Japanese low furniture, floor-level seating, zen minimal",
+        "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+        "special_features": "indoor plants, lush greenery, biophilic plant decor",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "minimal clean restrained mood, quiet understated atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["욕실", "히노키", "료칸", "일본", "정원뷰", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_loft_living",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "뉴욕 산업형 로프트 거실",
+        "description": "노출 벽돌+철제 창틀+콘크리트 천장의 뉴욕 스타일 산업형 로프트. 따뜻한 조명과 식물이 거친 공간을 포근하게 만드는 도시 감성.",
+        "preset_prompt": "Professional architectural interior photography of a stunning New York industrial loft living room. Exposed red brick walls, original cast iron columns, massive steel-framed warehouse windows flooding the space with afternoon light. Polished concrete floors, a poured concrete ceiling with exposed ducting and Edison bulb pendant lights. But warm — a large linen sofa, layered rugs, a wall of lush trailing plants, stacks of art books, a vintage Fender guitar against the brick. The warm afternoon sun pours through the steel windows in golden shafts. Perfectly balanced between raw and warm. Shot on Canon EOS R5, 24mm lens, f/4, ISO 800, natural afternoon light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "industrial interior, exposed brick, metal pipes, raw urban loft",
+        "int_material": "exposed brick wall, industrial raw masonry interior",
+        "furniture_style": "industrial furniture, metal and wood, workshop loft style",
+        "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+        "special_features": "indoor plants, lush greenery, biophilic plant decor",
+        "lighting": "golden hour warm light, late afternoon sun, amber glow",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["로프트", "산업형", "벽돌", "뉴욕", "거실", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_hanok_living",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "현대한옥 거실 마루",
+        "description": "전통 목재 들보와 한지 창호가 있는 현대한옥 거실. 마당이 보이는 툇마루와 따뜻한 온돌의 아늑함, 한국적 미감의 정수.",
+        "preset_prompt": "Professional architectural interior photography of a beautiful modern Korean hanok living room. Exposed dark timber ceiling beams and rafters. Hanji paper screen doors slide open to reveal a stone-paved inner courtyard with a single pine tree. The floor is polished ondol-heated stone. Low contemporary furniture — clean lines, natural linen, minimal. A celadon ceramic vase holds a single branch of white plum blossom. Soft afternoon light filters through the hanji screens, casting a warm diffused glow. The architecture connects deeply to Korean tradition while feeling completely contemporary. Shot on Canon EOS R5, 35mm lens, f/4, ISO 400, soft natural light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "modern hanok interior, traditional Korean wood, contemporary fusion",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "Japanese low furniture, floor-level seating, zen minimal",
+        "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+        "special_features": "courtyard, interior garden, open-air atrium",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "minimal clean restrained mood, quiet understated atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["한옥", "거실", "마루", "한지", "중정", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_coastal_living",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "해변 통창 오션뷰 거실",
+        "description": "모래사장 바로 앞 거실. 통창 너머 터키블루 바다가 펼쳐지고 파도 소리가 들리는 듯한 지중해 해변 거실의 완벽한 여유.",
+        "preset_prompt": "Professional architectural interior photography of a dream coastal living room directly on a Mediterranean beach. The entire ocean-facing wall is floor-to-ceiling glass, framing an extraordinary view of turquoise water, white sand, and a cloudless blue sky. The room itself is all white and natural — white linen sofas, bleached driftwood coffee table, sea glass in ceramic bowls, a bowl of lemons. Sea air and the sound of waves seem to flow through the glass. A ceiling fan turns slowly overhead. Late morning light makes the sea glow. Shot on Canon EOS R5, 35mm lens, f/4, ISO 400, natural bright light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+        "int_material": "ceramic porcelain tile, clean hygienic surface",
+        "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+        "color_palette": "sky blue and white Mediterranean palette, fresh airy",
+        "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "natural color grading, true-to-life realistic colors",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["거실", "오션뷰", "해변", "지중해", "통창", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_atelier_studio",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "천창 아틀리에 작업실",
+        "description": "파리 스타일 아틀리에 작업실. 천창으로 쏟아지는 화가의 빛, 캔버스와 물감, 식물이 가득한 창조적 공간.",
+        "preset_prompt": "Professional architectural interior photography of a dreamy Parisian artist's atelier studio. A massive north-facing skylight fills the tall-ceilinged space with the perfect cool diffused painter's light. Unfinished canvases lean against white walls. A large oak work table is scattered with paint tubes, brushes in ceramic jars, sketchbooks. Lush tropical plants crowd every corner and windowsill — monstera, fiddle-leaf fig, trailing pothos. A worn Persian rug on the stone floor. Afternoon light creates long soft shadows. The creative chaos is perfectly beautiful. Shot on Canon EOS R5, 24mm lens, f/4, ISO 800, natural skylight, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "home office, study room, work from home space",
+        "int_style": "bohemian interior, layered textiles, eclectic patterns, free-spirited",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "mid-century modern furniture, organic curves, tapered legs, retro",
+        "color_palette": "green and natural tones, biophilic nature-inspired palette",
+        "special_features": "skylight, roof window, natural light from above",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "natural color grading, true-to-life realistic colors",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["아틀리에", "작업실", "천창", "파리", "식물", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_rooftop_terrace_night",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "옥상 테라스 야외 거실",
+        "description": "도심 건물 옥상의 완벽한 야외 거실. 도시 야경을 배경으로 불꽃과 조명, 식물이 어우러진 따뜻한 저녁 공간.",
+        "preset_prompt": "Professional architectural interior photography of a perfect rooftop terrace living room in the city at dusk. Lush planters of lavender, olive trees, and ornamental grasses create a garden room in the sky. Deep outdoor sofas with weather-proof cushions face a bioethanol fire table glowing warmly. String lights weave between the plants overhead. The city skyline glows in the blue hour beyond the glass balustrade. A bottle of wine, two glasses, a cheese board. The city hum is distant and romantic. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 1600, blue hour and fire light, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "terrace balcony, indoor outdoor transition space",
+        "int_style": "contemporary architecture, sleek modern design, sophisticated",
+        "int_material": "ceramic porcelain tile, clean hygienic surface",
+        "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+        "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+        "special_features": "rooftop terrace, rooftop garden, urban outdoor space",
+        "lighting": "blue hour twilight, mystical cool blue atmospheric glow",
+        "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "cinematic teal and orange, film look color grade",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["옥상테라스", "야외거실", "야경", "블루아워", "도시", "LIVE", "살고싶다"],
+    },
+    {
+        "name": "interior_warmth_living",
+        "category": "LIVE",
+        "tier": "SS",
+        "mode": "interior",
+        "label": "웜 모던 거실 황혼",
+        "description": "황혼 빛이 가득한 따뜻한 현대 거실. 웜 베이지+테라코타+우드의 조화, 느리고 여유로운 저녁의 완벽한 아늑함.",
+        "preset_prompt": "Professional architectural interior photography of a deeply warm and inviting modern living room at golden hour. Warm terracotta plaster walls glow amber in the last light of the day. A deep curved linen sofa in warm oatmeal faces a low travertine coffee table. A large abstract painting in warm earth tones. Boucle cushions, a chunky hand-knit throw, a stack of coffee-table books. Floor lamp with warm tungsten light beginning to glow as the sun sets. Tall windows show a garden in the last golden light. A single glass of red wine. Everything in this room says slow down. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 800, golden hour, hyperrealistic interior photography, 8K resolution.",
+        "space_type": "living room, main living area, lounge",
+        "int_style": "warm modern interior, neutral warm tones, cozy contemporary",
+        "int_material": "solid wood flooring, warm oak hardwood floors",
+        "furniture_style": "Scandinavian furniture, light oak wood, simple clean design",
+        "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+        "special_features": "art gallery wall, curated artwork display, statement wall",
+        "lighting": "golden hour warm light, late afternoon sun, amber glow",
+        "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+        "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "photorealistic architectural photography, completed building photo",
+        "tags": ["거실", "웜모던", "황혼", "테라코타", "아늑함", "LIVE", "살고싶다"],
+    },
+]
+
+
+def main():
+    created = 0
+    skipped = 0
+
+    for preset in PRESETS:
+        path = PRESETS_DIR / f"{preset['name']}.json"
+        if path.exists():
+            print(f"  SKIP  {preset['name']}.json (이미 존재)")
+            skipped += 1
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(preset, f, ensure_ascii=False, indent=2)
+            print(f"  OK    {preset['name']}.json")
+            created += 1
+
+    print(f"\n완료: {created}개 생성, {skipped}개 건너뜀")
+    print(f"총 프리셋: {len(list(PRESETS_DIR.glob('*.json')))}개")
+
+
+if __name__ == "__main__":
+    main()

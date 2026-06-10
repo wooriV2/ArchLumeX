@@ -1,0 +1,29 @@
+{
+  "name": "interior_loft_living",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "뉴욕 산업형 로프트 거실",
+  "description": "노출 벽돌+철제 창틀+콘크리트 천장의 뉴욕 스타일 산업형 로프트. 따뜻한 조명과 식물이 거친 공간을 포근하게 만드는 도시 감성.",
+  "preset_prompt": "Professional architectural interior photography of a stunning New York industrial loft living room. Exposed red brick walls, original cast iron columns, massive steel-framed warehouse windows flooding the space with afternoon light. Polished concrete floors, a poured concrete ceiling with exposed ducting and Edison bulb pendant lights. But warm — a large linen sofa, layered rugs, a wall of lush trailing plants, stacks of art books, a vintage Fender guitar against the brick. The warm afternoon sun pours through the steel windows in golden shafts. Perfectly balanced between raw and warm. Shot on Canon EOS R5, 24mm lens, f/4, ISO 800, natural afternoon light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "industrial interior, exposed brick, metal pipes, raw urban loft",
+  "int_material": "exposed brick wall, industrial raw masonry interior",
+  "furniture_style": "industrial furniture, metal and wood, workshop loft style",
+  "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+  "special_features": "indoor plants, lush greenery, biophilic plant decor",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "로프트",
+    "산업형",
+    "벽돌",
+    "뉴욕",
+    "거실",
+    "LIVE",
+    "살고싶다"
+  ]
+}

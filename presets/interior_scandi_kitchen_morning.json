@@ -1,0 +1,29 @@
+{
+  "name": "interior_scandi_kitchen_morning",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "스칸디나비아 아침 주방",
+  "description": "화이트+라이트오크 스칸디나비아 주방에 아침햇살이 쏟아지는 장면. 커피 한 잔과 함께 시작하고 싶은 하루의 이상적인 공간.",
+  "preset_prompt": "Professional architectural interior photography of a perfect Scandinavian kitchen on a bright morning. White shaker cabinets, light oak open shelving, a pale marble countertop. Morning sunlight streams through large windows, casting warm golden light across the white surfaces and highlighting the steam rising from a fresh cup of coffee on the island. A simple bunch of wildflowers in a ceramic vase. Potted herbs on the windowsill. Everything is clean, calm, and quietly beautiful. The outside shows snow-dusted pine trees. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 400, natural morning light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "kitchen, cooking space, culinary area",
+  "int_style": "Scandinavian interior, hygge, light wood, white, cozy warmth",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "Scandinavian furniture, light oak wood, simple clean design",
+  "color_palette": "white and natural wood tones, bright warm neutral palette",
+  "special_features": "indoor plants, lush greenery, biophilic plant decor",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+  "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+  "color_grade": "high key bright airy, overexposed clean white tone",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "주방",
+    "스칸디나비아",
+    "아침",
+    "화이트오크",
+    "커피",
+    "LIVE",
+    "살고싶다"
+  ]
+}

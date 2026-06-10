@@ -1,0 +1,29 @@
+{
+  "name": "interior_warmth_living",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "웜 모던 거실 황혼",
+  "description": "황혼 빛이 가득한 따뜻한 현대 거실. 웜 베이지+테라코타+우드의 조화, 느리고 여유로운 저녁의 완벽한 아늑함.",
+  "preset_prompt": "Professional architectural interior photography of a deeply warm and inviting modern living room at golden hour. Warm terracotta plaster walls glow amber in the last light of the day. A deep curved linen sofa in warm oatmeal faces a low travertine coffee table. A large abstract painting in warm earth tones. Boucle cushions, a chunky hand-knit throw, a stack of coffee-table books. Floor lamp with warm tungsten light beginning to glow as the sun sets. Tall windows show a garden in the last golden light. A single glass of red wine. Everything in this room says slow down. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 800, golden hour, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "warm modern interior, neutral warm tones, cozy contemporary",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "Scandinavian furniture, light oak wood, simple clean design",
+  "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+  "special_features": "art gallery wall, curated artwork display, statement wall",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+  "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "거실",
+    "웜모던",
+    "황혼",
+    "테라코타",
+    "아늑함",
+    "LIVE",
+    "살고싶다"
+  ]
+}

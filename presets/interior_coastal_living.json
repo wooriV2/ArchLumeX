@@ -1,0 +1,29 @@
+{
+  "name": "interior_coastal_living",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "해변 통창 오션뷰 거실",
+  "description": "모래사장 바로 앞 거실. 통창 너머 터키블루 바다가 펼쳐지고 파도 소리가 들리는 듯한 지중해 해변 거실의 완벽한 여유.",
+  "preset_prompt": "Professional architectural interior photography of a dream coastal living room directly on a Mediterranean beach. The entire ocean-facing wall is floor-to-ceiling glass, framing an extraordinary view of turquoise water, white sand, and a cloudless blue sky. The room itself is all white and natural — white linen sofas, bleached driftwood coffee table, sea glass in ceramic bowls, a bowl of lemons. Sea air and the sound of waves seem to flow through the glass. A ceiling fan turns slowly overhead. Late morning light makes the sea glow. Shot on Canon EOS R5, 35mm lens, f/4, ISO 400, natural bright light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "modern minimalist interior, white walls, clean lines, uncluttered",
+  "int_material": "ceramic porcelain tile, clean hygienic surface",
+  "furniture_style": "built-in minimalist furniture, seamless cabinetry, integrated storage",
+  "color_palette": "sky blue and white Mediterranean palette, fresh airy",
+  "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "거실",
+    "오션뷰",
+    "해변",
+    "지중해",
+    "통창",
+    "LIVE",
+    "살고싶다"
+  ]
+}

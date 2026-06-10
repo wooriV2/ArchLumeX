@@ -1,0 +1,29 @@
+{
+  "name": "interior_japanese_bathroom",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "일본식 히노키 욕실",
+  "description": "향기로운 히노키 목재로 만든 일본 료칸 스타일 욕실. 정원이 보이는 창가에서 즐기는 깊은 목욕통과 대나무 조경의 완벽한 조화.",
+  "preset_prompt": "Professional architectural interior photography of a sublime Japanese hinoki cypress bathroom in the style of a luxury ryokan. The entire room is clad in fragrant pale golden hinoki wood — walls, floor, deep soaking tub. A large sliding shoji screen opens to reveal a private moss and bamboo garden just outside. Soft afternoon light filters through the shoji paper, casting gentle shadows. A single ceramic bowl holds a folded towel. Steam rises from the clear water in the deep square tub. The grain of the wood is extraordinary. Pure Japanese minimalism at its most beautiful. Shot on Canon EOS R5, 35mm lens, f/4, ISO 800, soft diffused light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "bathroom, main bathroom, wet room",
+  "int_style": "Japanese wabi-sabi interior, natural materials, zen calm, simplicity",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "Japanese low furniture, floor-level seating, zen minimal",
+  "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+  "special_features": "indoor plants, lush greenery, biophilic plant decor",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "minimal clean restrained mood, quiet understated atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "욕실",
+    "히노키",
+    "료칸",
+    "일본",
+    "정원뷰",
+    "LIVE",
+    "살고싶다"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "interior_fireplace_library",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "벽난로 서재 독서 공간",
+  "description": "바닥부터 천장까지 책장, 가죽 체스터필드 소파, 활활 타는 벽난로. 비 오는 날 오후 완벽한 독서 공간의 극치.",
+  "preset_prompt": "Professional architectural interior photography of the perfect reading room. Floor-to-ceiling bookshelves on every wall, filled with thousands of books. A deep green leather Chesterfield sofa faces a large stone fireplace with a roaring fire. A tartan wool throw, a half-drunk glass of whisky, and an open book on the side table. Warm lamplight mingles with the firelight. Rain streaks the single tall window. A Persian rug on the dark hardwood floor. The smell of old paper and wood smoke is almost tangible. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 1600, firelight and lamplight, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "home office, study room, work from home space",
+  "int_style": "classic European interior, crown molding, elegant traditional",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "classic European furniture, ornate molding, antique elegant",
+  "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+  "special_features": "fireplace, hearth, warm interior focal point",
+  "lighting": "warm candlelight ambiance, cozy warm lighting, intimate glow",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "mood": "cozy warm inviting mood, homey comfortable atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "서재",
+    "벽난로",
+    "책장",
+    "가죽소파",
+    "비오는날",
+    "LIVE",
+    "살고싶다"
+  ]
+}

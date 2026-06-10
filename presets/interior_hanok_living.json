@@ -1,0 +1,29 @@
+{
+  "name": "interior_hanok_living",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "현대한옥 거실 마루",
+  "description": "전통 목재 들보와 한지 창호가 있는 현대한옥 거실. 마당이 보이는 툇마루와 따뜻한 온돌의 아늑함, 한국적 미감의 정수.",
+  "preset_prompt": "Professional architectural interior photography of a beautiful modern Korean hanok living room. Exposed dark timber ceiling beams and rafters. Hanji paper screen doors slide open to reveal a stone-paved inner courtyard with a single pine tree. The floor is polished ondol-heated stone. Low contemporary furniture — clean lines, natural linen, minimal. A celadon ceramic vase holds a single branch of white plum blossom. Soft afternoon light filters through the hanji screens, casting a warm diffused glow. The architecture connects deeply to Korean tradition while feeling completely contemporary. Shot on Canon EOS R5, 35mm lens, f/4, ISO 400, soft natural light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "living room, main living area, lounge",
+  "int_style": "modern hanok interior, traditional Korean wood, contemporary fusion",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "Japanese low furniture, floor-level seating, zen minimal",
+  "color_palette": "warm beige terracotta earth tones, cozy warm palette",
+  "special_features": "courtyard, interior garden, open-air atrium",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "mood": "minimal clean restrained mood, quiet understated atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "한옥",
+    "거실",
+    "마루",
+    "한지",
+    "중정",
+    "LIVE",
+    "살고싶다"
+  ]
+}

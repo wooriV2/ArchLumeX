@@ -1,0 +1,29 @@
+{
+  "name": "interior_rooftop_terrace_night",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "옥상 테라스 야외 거실",
+  "description": "도심 건물 옥상의 완벽한 야외 거실. 도시 야경을 배경으로 불꽃과 조명, 식물이 어우러진 따뜻한 저녁 공간.",
+  "preset_prompt": "Professional architectural interior photography of a perfect rooftop terrace living room in the city at dusk. Lush planters of lavender, olive trees, and ornamental grasses create a garden room in the sky. Deep outdoor sofas with weather-proof cushions face a bioethanol fire table glowing warmly. String lights weave between the plants overhead. The city skyline glows in the blue hour beyond the glass balustrade. A bottle of wine, two glasses, a cheese board. The city hum is distant and romantic. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 1600, blue hour and fire light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "terrace balcony, indoor outdoor transition space",
+  "int_style": "contemporary architecture, sleek modern design, sophisticated",
+  "int_material": "ceramic porcelain tile, clean hygienic surface",
+  "furniture_style": "modern luxury furniture, velvet upholstery, gold accents, premium",
+  "color_palette": "dark moody midnight palette, dramatic deep tones, dark interior",
+  "special_features": "rooftop terrace, rooftop garden, urban outdoor space",
+  "lighting": "blue hour twilight, mystical cool blue atmospheric glow",
+  "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "cinematic teal and orange, film look color grade",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "옥상테라스",
+    "야외거실",
+    "야경",
+    "블루아워",
+    "도시",
+    "LIVE",
+    "살고싶다"
+  ]
+}

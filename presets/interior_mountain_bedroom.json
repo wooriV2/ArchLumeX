@@ -1,0 +1,29 @@
+{
+  "name": "interior_mountain_bedroom",
+  "category": "LIVE",
+  "tier": "SS",
+  "mode": "interior",
+  "label": "산뷰 통창 침실 아침",
+  "description": "통창 너머 설산이 펼쳐지는 목조 침실. 아침 안개가 걷히며 산봉우리가 드러나는 순간, 포근한 이불 속에서 바라보는 최고의 뷰.",
+  "preset_prompt": "Professional architectural interior photography of a serene mountain bedroom at dawn. A king-size bed with crisp white linen and a chunky knit blanket faces an enormous floor-to-ceiling window that fills the entire far wall. Beyond the glass, snow-capped mountain peaks emerge from dissolving morning mist in the golden early light. The bedroom walls are warm natural timber. A wood-burning stove glows in the corner. The room is simple and perfect — nothing competes with the view. Shot on Canon EOS R5, 35mm lens, f/2.8, ISO 800, dawn natural light, hyperrealistic interior photography, 8K resolution.",
+  "space_type": "bedroom, master bedroom, sleeping space",
+  "int_style": "Scandinavian interior, hygge, light wood, white, cozy warmth",
+  "int_material": "solid wood flooring, warm oak hardwood floors",
+  "furniture_style": "Scandinavian furniture, light wood, simple clean design",
+  "color_palette": "white and natural wood tones, bright warm neutral palette",
+  "special_features": "floor-to-ceiling windows, panoramic glazing, expansive view",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "high key bright airy, overexposed clean white tone",
+  "render_style": "photorealistic architectural photography, completed building photo",
+  "tags": [
+    "침실",
+    "설산뷰",
+    "통창",
+    "아침",
+    "목조",
+    "LIVE",
+    "살고싶다"
+  ]
+}
