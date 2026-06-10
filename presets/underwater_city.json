@@ -1,0 +1,28 @@
+{
+  "name": "underwater_city",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "심해 수중 도시",
+  "description": "심해 바닥에 건설된 유리 돔 도시 문명. 거대한 고래와 발광 심해어가 도시 위를 유영하는 압도적인 수중 세계.",
+  "preset_prompt": "Professional architectural photography of a spectacular underwater city built on the deep ocean floor. Dozens of interconnected glass domes of varying sizes form a complete civilization on the seabed. Streets and plazas are visible through the glass. Bioluminescent deep-sea creatures drift past — giant manta rays, glowing jellyfish, anglerfish, schools of luminescent fish. Ancient coral formations have grown around and through the city structures over centuries. The water above fades from dark teal to deep navy to absolute black. Shafts of light filter down from far above. A complete world hidden beneath the sea. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "small multi-family villa, urban residential building",
+  "arch_style": "high-tech architecture, glass and steel, futuristic precision",
+  "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "water feature, pond pool fountain, reflective water element",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "수중도시",
+    "심해",
+    "유리돔",
+    "고래",
+    "발광",
+    "DREAM"
+  ]
+}

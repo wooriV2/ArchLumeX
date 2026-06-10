@@ -1,0 +1,28 @@
+{
+  "name": "ancient_tree_megacity",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "거목 위 거대 도시",
+  "description": "수천 년 된 초거대 나무들 위에 지어진 문명 도시. 나무 줄기가 고층 건물만큼 크고 가지 위에 도시 전체가 펼쳐지는 바이오필릭 판타지.",
+  "preset_prompt": "Professional architectural photography of an entire civilization built into and upon colossal ancient trees. The trees are unimaginably vast — each trunk is wider than a city block, bark textured like canyon walls, roots like mountain ridges. A complete city has grown with the trees over millennia: platforms, bridges, and buildings constructed from living wood and woven branches span between the enormous trunks at every level. Waterfalls pour from natural hollows high above. The canopy is so dense it creates its own weather system of clouds and mist. Shafts of green-gold light filter down through gaps in the leaves far above. The ultimate synthesis of nature and civilization. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "small multi-family villa, urban residential building",
+  "arch_style": "vernacular architecture, local materials, organic natural building",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "green roof, rooftop garden, living grass roof, eco sustainable",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+  "weather": "foggy misty atmosphere, mysterious soft focus",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "거목",
+    "수상도시",
+    "바이오필릭",
+    "판타지",
+    "자연문명",
+    "DREAM"
+  ]
+}

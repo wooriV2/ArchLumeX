@@ -1,0 +1,28 @@
+{
+  "name": "floating_sky_city",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "구름 위 부유 도시",
+  "description": "구름 위에 떠있는 거대한 공중 도시. 폭포가 구름 아래로 쏟아지고 공중 정원과 다리가 섬들을 연결하는 판타지 문명.",
+  "preset_prompt": "Professional architectural photography of a breathtaking floating sky city above the clouds. Massive islands of stone and earth hover impossibly in a golden sunset sky, connected by elegant arched bridges and cascading waterfalls that fall into the infinite clouds below. Lush hanging gardens drip from the island edges. Gleaming white stone towers and domed buildings rise from the islands. Airships drift between the islands. The clouds below glow in amber and rose. A complete civilization suspended above the world. Cinematic scale and wonder. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning concept architectural photography.",
+  "building_type": "small multi-family villa, urban residential building",
+  "arch_style": "contemporary architecture, sleek modern design, sophisticated",
+  "ext_material": "natural stone cladding, granite limestone, premium exterior",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "cinematic teal and orange, film look color grade",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "공중도시",
+    "구름",
+    "판타지",
+    "폭포",
+    "부유섬",
+    "DREAM"
+  ]
+}

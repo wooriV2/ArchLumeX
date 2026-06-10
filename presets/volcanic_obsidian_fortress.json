@@ -1,0 +1,28 @@
+{
+  "name": "volcanic_obsidian_fortress",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "화산 흑요석 요새",
+  "description": "활화산 용암 위에 세워진 거대 흑요석 요새. 붉은 용암이 요새 주변을 흐르고 화산재와 불꽃이 하늘을 물들이는 극단적 드라마.",
+  "preset_prompt": "Professional architectural photography of a monumental obsidian fortress built directly on an active volcano. The fortress is constructed entirely from jet-black volcanic obsidian and basalt — massive walls, towers, and battlements that seem to grow organically from the volcanic rock below. Rivers of glowing orange-red lava flow around the fortress base, illuminating the black stone walls with hellish reflected light. Volcanic ash and embers rain from the sky. Massive columns of smoke and fire erupt from vents around the fortress. Lightning strikes in the ash cloud above. The structure looks eternal, unconquerable, terrifying and beautiful. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, cinematic architectural photography.",
+  "building_type": "single-family detached house, residential home",
+  "arch_style": "brutalist architecture, raw concrete mass, bold geometric forms",
+  "ext_material": "corten steel, weathering steel, rust-brown patina, industrial chic",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "gravel garden, pebble landscaping, low maintenance xeriscaping",
+  "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "weather": "foggy misty atmosphere, mysterious soft focus",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "화산",
+    "흑요석",
+    "요새",
+    "용암",
+    "극적",
+    "DREAM"
+  ]
+}

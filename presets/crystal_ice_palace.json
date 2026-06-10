@@ -1,0 +1,28 @@
+{
+  "name": "crystal_ice_palace",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "수정 얼음 궁전",
+  "description": "얼음과 수정으로 만들어진 궁전. 빛이 수천 개의 프리즘을 통과하며 무지개빛 스펙트럼을 만들어내는 초현실적 아름다움.",
+  "preset_prompt": "Professional architectural photography of an impossibly beautiful crystal ice palace in an Arctic landscape. The entire palace is constructed from towering translucent ice crystals and natural crystal formations — quartz, amethyst, sapphire blue ice. Brilliant winter sunlight refracts through every surface, creating thousands of rainbow prisms and spectral light beams that dance across the snow. The palace spirals upward in organic crystalline formations, neither built nor grown but somewhere between. The surrounding landscape is pristine white tundra under a pale arctic sky. A structure of pure frozen magic. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "pension guesthouse, vacation rental, countryside inn",
+  "arch_style": "high-tech architecture, glass and steel, futuristic precision",
+  "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "weather": "snowfall, snow-covered, winter white landscape",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "수정",
+    "얼음",
+    "궁전",
+    "프리즘",
+    "무지개빛",
+    "DREAM"
+  ]
+}

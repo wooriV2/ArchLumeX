@@ -1,0 +1,28 @@
+{
+  "name": "bioluminescent_village",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "발광 마을 야경",
+  "description": "야간에 스스로 빛을 내는 마을. 건물, 나무, 물이 모두 청록색으로 발광하며 수면에 반사되는 galaxy_nebula의 건축 버전.",
+  "preset_prompt": "Professional architectural photography of a magical bioluminescent village at night. Every surface of this remote coastal village glows with organic blue-green bioluminescence — the wooden buildings, the ancient trees, the moss on the stone paths, the shallow bay water. The entire scene pulses with soft ethereal light in shades of teal, cyan, electric blue, and violet. Reflections of the glowing village shimmer perfectly in the still black water below. The Milky Way blazes overhead. No artificial lighting — only the living glow of the village itself. Like something from another world entirely. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "traditional Korean hanok, timber frame, tiled roof",
+  "arch_style": "vernacular architecture, local materials, organic natural building",
+  "ext_material": "wood siding, natural timber cladding, warm organic texture",
+  "roof_style": "gabled roof, classic triangular pitched roof",
+  "landscaping": "water feature, pond pool fountain, reflective water element",
+  "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+  "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "cool blue color grade, crisp clean tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "발광",
+    "바이오루미네센스",
+    "야경",
+    "수면반사",
+    "은하수",
+    "DREAM"
+  ]
+}

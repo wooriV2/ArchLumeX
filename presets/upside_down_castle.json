@@ -1,0 +1,29 @@
+{
+  "name": "upside_down_castle",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "거꾸로 매달린 성",
+  "description": "절벽 아래로 거꾸로 자라나는 성. 중력을 무시한 채 바위 천장에서 뻗어내려온 탑과 첨탑이 구름 속으로 사라지는 불가능한 건축.",
+  "preset_prompt": "Professional architectural photography of an impossible inverted castle hanging upside down from a massive cliff overhang. The castle grows downward from the rock ceiling — towers and spires point toward the earth below, buttresses arch downward, windows face the sky above. The castle is medieval in style, built from dark weathered stone, covered in hanging vines and moss. Waterfalls flow upward along its walls through impossible physics. Thick clouds wrap around the lower spires. Lightning illuminates the dramatic scene. Far below, a kingdom of forests stretches to the horizon. Pure architectural impossibility made beautiful. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, cinematic architectural photography.",
+  "building_type": "single-family detached house, residential home",
+  "arch_style": "brutalist architecture, raw concrete mass, bold geometric forms",
+  "ext_material": "natural stone cladding, granite limestone, premium exterior",
+  "roof_style": "gabled roof, classic triangular pitched roof",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+  "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+  "weather": "foggy misty atmosphere, mysterious soft focus",
+  "mood": "dramatic intense mood, powerful bold atmosphere",
+  "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "거꾸로",
+    "성",
+    "중력무시",
+    "절벽",
+    "판타지",
+    "불가능한건축",
+    "DREAM"
+  ]
+}

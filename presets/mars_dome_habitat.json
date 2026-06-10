@@ -1,0 +1,28 @@
+{
+  "name": "mars_dome_habitat",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "화성 돔 거주지",
+  "description": "화성의 붉은 모래 위에 세워진 거대 유리 돔 거주지. 두 개의 달이 뜬 하늘 아래 인류의 새로운 고향.",
+  "preset_prompt": "Professional architectural photography of a spectacular Mars habitat colony on the Martian surface. A cluster of massive transparent geodesic glass domes rises from the rust-red Martian desert, connected by pressurized tube corridors. Inside the domes, lush green Earth vegetation is visible — a impossible contrast with the barren red landscape outside. Two moons hang in the dusty pink-purple Martian sky. The sun is smaller and dimmer than on Earth. Red rock formations and dust dunes stretch to the horizon. Solar panels and antenna arrays dot the landscape. Humanity's second home. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "small multi-family villa, urban residential building",
+  "arch_style": "high-tech architecture, glass and steel, futuristic precision",
+  "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+  "roof_style": "flat roof, modern minimalist roofline",
+  "landscaping": "gravel garden, pebble landscaping, low maintenance xeriscaping",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+  "weather": "foggy misty atmosphere, mysterious soft focus",
+  "mood": "futuristic forward-looking mood, high-tech sleek atmosphere",
+  "color_grade": "cinematic teal and orange, film look color grade",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "화성",
+    "돔",
+    "SF",
+    "미래",
+    "우주식민지",
+    "DREAM"
+  ]
+}

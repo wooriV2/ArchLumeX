@@ -1,0 +1,28 @@
+{
+  "name": "cloud_temple_mist",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "안개 속 구름 위 사원",
+  "description": "히말라야 산 정상 안개 속에 떠있는 고대 사원. 구름을 뚫고 솟아오른 첨탑과 계단이 하늘과 맞닿는 신선계 같은 장면.",
+  "preset_prompt": "Professional architectural photography of an ancient mystical temple perched impossibly on a needle-thin mountain peak above the clouds. The temple is built in classical East Asian style — layered curved golden roofs, red lacquered pillars, stone dragons. Thick clouds surround the mountain peak on all sides, making the temple appear to float in the sky. Dawn light turns the clouds gold and rose. Prayer flags stream in the wind. Stone steps carved into the cliff face descend into the cloud layer below and disappear. Cranes circle the highest pagoda. The boundary between earth and heaven. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+  "building_type": "single-family detached house, residential home",
+  "arch_style": "vernacular architecture, local materials, organic natural building",
+  "ext_material": "natural stone cladding, granite limestone, premium exterior",
+  "roof_style": "traditional Korean tile roof, curved hanok eaves, clay tiles",
+  "landscaping": "Japanese zen garden, raked gravel, stone lantern, pine bonsai",
+  "lighting": "golden hour warm light, late afternoon sun, amber glow",
+  "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+  "weather": "foggy misty atmosphere, mysterious soft focus",
+  "mood": "romantic soft warm mood, tender dreamy atmosphere",
+  "color_grade": "warm golden color grade, cozy inviting tones",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "사원",
+    "구름",
+    "안개",
+    "동양판타지",
+    "신선계",
+    "DREAM"
+  ]
+}

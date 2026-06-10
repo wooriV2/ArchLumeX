@@ -1,0 +1,28 @@
+{
+  "name": "rainbow_bridge_islands",
+  "category": "DREAM",
+  "tier": "SS",
+  "mode": "exterior",
+  "label": "무지개 다리 공중 섬 도시",
+  "description": "판도라를 연상시키는 공중 부유 섬들. 무지개빛 광물 다리로 연결된 섬마다 폭포가 쏟아지고 거대한 나무가 하늘을 향해 자라는 장면.",
+  "preset_prompt": "Professional architectural photography of a breathtaking archipelago of floating sky islands connected by iridescent mineral bridges. Each island is a lush paradise with its own ecosystem — waterfalls cascade endlessly off the edges into clouds far below, enormous luminescent trees hundreds of meters tall reach toward the sky, and crystal formations catch the light in rainbow prisms. The bridges connecting the islands are made of a glowing mineral that radiates soft blue-violet light. Massive flying creatures soar between the islands. The sky is a deep azure. Inspired by Avatar's Hallelujah Mountains but entirely architectural in concept. Shot on Hasselblad medium format, ultra-sharp, 8K resolution.",
+  "building_type": "small multi-family villa, urban residential building",
+  "arch_style": "contemporary architecture, sleek modern design, sophisticated",
+  "ext_material": "natural stone cladding, granite limestone, premium exterior",
+  "roof_style": "green roof, rooftop garden, living grass roof, eco sustainable",
+  "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+  "lighting": "natural daylight, bright sunlight streaming in, clear day",
+  "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+  "weather": "clear blue sky, bright sunny weather, sharp shadows",
+  "mood": "biophilic natural mood, organic earthy serene atmosphere",
+  "color_grade": "natural color grading, true-to-life realistic colors",
+  "render_style": "high quality CGI architectural visualization, 3D render",
+  "tags": [
+    "공중섬",
+    "무지개다리",
+    "판도라",
+    "폭포",
+    "부유",
+    "DREAM"
+  ]
+}

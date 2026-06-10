@@ -1,0 +1,248 @@
+"""
+ArchLumeX add_presets_v04.py
+DREAM 카테고리 10개 프리셋 — "환상, 꿈, 말도 안 되는 아름다움"
+
+실행: python add_presets_v04.py
+"""
+
+import json
+from pathlib import Path
+
+PRESETS_DIR = Path(__file__).parent.parent / "presets"
+PRESETS_DIR.mkdir(exist_ok=True)
+
+PRESETS = [
+    {
+        "name": "floating_sky_city",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "구름 위 부유 도시",
+        "description": "구름 위에 떠있는 거대한 공중 도시. 폭포가 구름 아래로 쏟아지고 공중 정원과 다리가 섬들을 연결하는 판타지 문명.",
+        "preset_prompt": "Professional architectural photography of a breathtaking floating sky city above the clouds. Massive islands of stone and earth hover impossibly in a golden sunset sky, connected by elegant arched bridges and cascading waterfalls that fall into the infinite clouds below. Lush hanging gardens drip from the island edges. Gleaming white stone towers and domed buildings rise from the islands. Airships drift between the islands. The clouds below glow in amber and rose. A complete civilization suspended above the world. Cinematic scale and wonder. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning concept architectural photography.",
+        "building_type": "small multi-family villa, urban residential building",
+        "arch_style": "contemporary architecture, sleek modern design, sophisticated",
+        "ext_material": "natural stone cladding, granite limestone, premium exterior",
+        "roof_style": "flat roof, modern minimalist roofline",
+        "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+        "lighting": "golden hour warm light, late afternoon sun, amber glow",
+        "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+        "weather": "clear blue sky, bright sunny weather, sharp shadows",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "cinematic teal and orange, film look color grade",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["공중도시", "구름", "판타지", "폭포", "부유섬", "DREAM"],
+    },
+    {
+        "name": "crystal_ice_palace",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "수정 얼음 궁전",
+        "description": "얼음과 수정으로 만들어진 궁전. 빛이 수천 개의 프리즘을 통과하며 무지개빛 스펙트럼을 만들어내는 초현실적 아름다움.",
+        "preset_prompt": "Professional architectural photography of an impossibly beautiful crystal ice palace in an Arctic landscape. The entire palace is constructed from towering translucent ice crystals and natural crystal formations — quartz, amethyst, sapphire blue ice. Brilliant winter sunlight refracts through every surface, creating thousands of rainbow prisms and spectral light beams that dance across the snow. The palace spirals upward in organic crystalline formations, neither built nor grown but somewhere between. The surrounding landscape is pristine white tundra under a pale arctic sky. A structure of pure frozen magic. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+        "building_type": "pension guesthouse, vacation rental, countryside inn",
+        "arch_style": "high-tech architecture, glass and steel, futuristic precision",
+        "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+        "roof_style": "flat roof, modern minimalist roofline",
+        "landscaping": "",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "weather": "snowfall, snow-covered, winter white landscape",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "cool blue color grade, crisp clean tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["수정", "얼음", "궁전", "프리즘", "무지개빛", "DREAM"],
+    },
+    {
+        "name": "bioluminescent_village",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "발광 마을 야경",
+        "description": "야간에 스스로 빛을 내는 마을. 건물, 나무, 물이 모두 청록색으로 발광하며 수면에 반사되는 galaxy_nebula의 건축 버전.",
+        "preset_prompt": "Professional architectural photography of a magical bioluminescent village at night. Every surface of this remote coastal village glows with organic blue-green bioluminescence — the wooden buildings, the ancient trees, the moss on the stone paths, the shallow bay water. The entire scene pulses with soft ethereal light in shades of teal, cyan, electric blue, and violet. Reflections of the glowing village shimmer perfectly in the still black water below. The Milky Way blazes overhead. No artificial lighting — only the living glow of the village itself. Like something from another world entirely. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+        "building_type": "traditional Korean hanok, timber frame, tiled roof",
+        "arch_style": "vernacular architecture, local materials, organic natural building",
+        "ext_material": "wood siding, natural timber cladding, warm organic texture",
+        "roof_style": "gabled roof, classic triangular pitched roof",
+        "landscaping": "water feature, pond pool fountain, reflective water element",
+        "lighting": "night lighting, artificial lights glowing, evening atmosphere",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "weather": "clear blue sky, bright sunny weather, sharp shadows",
+        "mood": "biophilic natural mood, organic earthy serene atmosphere",
+        "color_grade": "cool blue color grade, crisp clean tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["발광", "바이오루미네센스", "야경", "수면반사", "은하수", "DREAM"],
+    },
+    {
+        "name": "mars_dome_habitat",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "화성 돔 거주지",
+        "description": "화성의 붉은 모래 위에 세워진 거대 유리 돔 거주지. 두 개의 달이 뜬 하늘 아래 인류의 새로운 고향.",
+        "preset_prompt": "Professional architectural photography of a spectacular Mars habitat colony on the Martian surface. A cluster of massive transparent geodesic glass domes rises from the rust-red Martian desert, connected by pressurized tube corridors. Inside the domes, lush green Earth vegetation is visible — a impossible contrast with the barren red landscape outside. Two moons hang in the dusty pink-purple Martian sky. The sun is smaller and dimmer than on Earth. Red rock formations and dust dunes stretch to the horizon. Solar panels and antenna arrays dot the landscape. Humanity's second home. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+        "building_type": "small multi-family villa, urban residential building",
+        "arch_style": "high-tech architecture, glass and steel, futuristic precision",
+        "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+        "roof_style": "flat roof, modern minimalist roofline",
+        "landscaping": "gravel garden, pebble landscaping, low maintenance xeriscaping",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+        "weather": "foggy misty atmosphere, mysterious soft focus",
+        "mood": "futuristic forward-looking mood, high-tech sleek atmosphere",
+        "color_grade": "cinematic teal and orange, film look color grade",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["화성", "돔", "SF", "미래", "우주식민지", "DREAM"],
+    },
+    {
+        "name": "upside_down_castle",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "거꾸로 매달린 성",
+        "description": "절벽 아래로 거꾸로 자라나는 성. 중력을 무시한 채 바위 천장에서 뻗어내려온 탑과 첨탑이 구름 속으로 사라지는 불가능한 건축.",
+        "preset_prompt": "Professional architectural photography of an impossible inverted castle hanging upside down from a massive cliff overhang. The castle grows downward from the rock ceiling — towers and spires point toward the earth below, buttresses arch downward, windows face the sky above. The castle is medieval in style, built from dark weathered stone, covered in hanging vines and moss. Waterfalls flow upward along its walls through impossible physics. Thick clouds wrap around the lower spires. Lightning illuminates the dramatic scene. Far below, a kingdom of forests stretches to the horizon. Pure architectural impossibility made beautiful. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, cinematic architectural photography.",
+        "building_type": "single-family detached house, residential home",
+        "arch_style": "brutalist architecture, raw concrete mass, bold geometric forms",
+        "ext_material": "natural stone cladding, granite limestone, premium exterior",
+        "roof_style": "gabled roof, classic triangular pitched roof",
+        "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+        "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+        "time_of_day": "dusk twilight, dramatic sunset colors, sky ablaze",
+        "weather": "foggy misty atmosphere, mysterious soft focus",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["거꾸로", "성", "중력무시", "절벽", "판타지", "불가능한건축", "DREAM"],
+    },
+    {
+        "name": "underwater_city",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "심해 수중 도시",
+        "description": "심해 바닥에 건설된 유리 돔 도시 문명. 거대한 고래와 발광 심해어가 도시 위를 유영하는 압도적인 수중 세계.",
+        "preset_prompt": "Professional architectural photography of a spectacular underwater city built on the deep ocean floor. Dozens of interconnected glass domes of varying sizes form a complete civilization on the seabed. Streets and plazas are visible through the glass. Bioluminescent deep-sea creatures drift past — giant manta rays, glowing jellyfish, anglerfish, schools of luminescent fish. Ancient coral formations have grown around and through the city structures over centuries. The water above fades from dark teal to deep navy to absolute black. Shafts of light filter down from far above. A complete world hidden beneath the sea. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+        "building_type": "small multi-family villa, urban residential building",
+        "arch_style": "high-tech architecture, glass and steel, futuristic precision",
+        "ext_material": "glass curtain wall, full glass facade, reflective modern exterior",
+        "roof_style": "flat roof, modern minimalist roofline",
+        "landscaping": "water feature, pond pool fountain, reflective water element",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "weather": "clear blue sky, bright sunny weather, sharp shadows",
+        "mood": "biophilic natural mood, organic earthy serene atmosphere",
+        "color_grade": "cool blue color grade, crisp clean tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["수중도시", "심해", "유리돔", "고래", "발광", "DREAM"],
+    },
+    {
+        "name": "cloud_temple_mist",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "안개 속 구름 위 사원",
+        "description": "히말라야 산 정상 안개 속에 떠있는 고대 사원. 구름을 뚫고 솟아오른 첨탑과 계단이 하늘과 맞닿는 신선계 같은 장면.",
+        "preset_prompt": "Professional architectural photography of an ancient mystical temple perched impossibly on a needle-thin mountain peak above the clouds. The temple is built in classical East Asian style — layered curved golden roofs, red lacquered pillars, stone dragons. Thick clouds surround the mountain peak on all sides, making the temple appear to float in the sky. Dawn light turns the clouds gold and rose. Prayer flags stream in the wind. Stone steps carved into the cliff face descend into the cloud layer below and disappear. Cranes circle the highest pagoda. The boundary between earth and heaven. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+        "building_type": "single-family detached house, residential home",
+        "arch_style": "vernacular architecture, local materials, organic natural building",
+        "ext_material": "natural stone cladding, granite limestone, premium exterior",
+        "roof_style": "traditional Korean tile roof, curved hanok eaves, clay tiles",
+        "landscaping": "Japanese zen garden, raked gravel, stone lantern, pine bonsai",
+        "lighting": "golden hour warm light, late afternoon sun, amber glow",
+        "time_of_day": "early morning soft light, fresh dawn atmosphere, quiet morning",
+        "weather": "foggy misty atmosphere, mysterious soft focus",
+        "mood": "romantic soft warm mood, tender dreamy atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["사원", "구름", "안개", "동양판타지", "신선계", "DREAM"],
+    },
+    {
+        "name": "rainbow_bridge_islands",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "무지개 다리 공중 섬 도시",
+        "description": "판도라를 연상시키는 공중 부유 섬들. 무지개빛 광물 다리로 연결된 섬마다 폭포가 쏟아지고 거대한 나무가 하늘을 향해 자라는 장면.",
+        "preset_prompt": "Professional architectural photography of a breathtaking archipelago of floating sky islands connected by iridescent mineral bridges. Each island is a lush paradise with its own ecosystem — waterfalls cascade endlessly off the edges into clouds far below, enormous luminescent trees hundreds of meters tall reach toward the sky, and crystal formations catch the light in rainbow prisms. The bridges connecting the islands are made of a glowing mineral that radiates soft blue-violet light. Massive flying creatures soar between the islands. The sky is a deep azure. Inspired by Avatar's Hallelujah Mountains but entirely architectural in concept. Shot on Hasselblad medium format, ultra-sharp, 8K resolution.",
+        "building_type": "small multi-family villa, urban residential building",
+        "arch_style": "contemporary architecture, sleek modern design, sophisticated",
+        "ext_material": "natural stone cladding, granite limestone, premium exterior",
+        "roof_style": "green roof, rooftop garden, living grass roof, eco sustainable",
+        "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "midday harsh sunlight, strong direct light, high contrast",
+        "weather": "clear blue sky, bright sunny weather, sharp shadows",
+        "mood": "biophilic natural mood, organic earthy serene atmosphere",
+        "color_grade": "natural color grading, true-to-life realistic colors",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["공중섬", "무지개다리", "판도라", "폭포", "부유", "DREAM"],
+    },
+    {
+        "name": "volcanic_obsidian_fortress",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "화산 흑요석 요새",
+        "description": "활화산 용암 위에 세워진 거대 흑요석 요새. 붉은 용암이 요새 주변을 흐르고 화산재와 불꽃이 하늘을 물들이는 극단적 드라마.",
+        "preset_prompt": "Professional architectural photography of a monumental obsidian fortress built directly on an active volcano. The fortress is constructed entirely from jet-black volcanic obsidian and basalt — massive walls, towers, and battlements that seem to grow organically from the volcanic rock below. Rivers of glowing orange-red lava flow around the fortress base, illuminating the black stone walls with hellish reflected light. Volcanic ash and embers rain from the sky. Massive columns of smoke and fire erupt from vents around the fortress. Lightning strikes in the ash cloud above. The structure looks eternal, unconquerable, terrifying and beautiful. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, cinematic architectural photography.",
+        "building_type": "single-family detached house, residential home",
+        "arch_style": "brutalist architecture, raw concrete mass, bold geometric forms",
+        "ext_material": "corten steel, weathering steel, rust-brown patina, industrial chic",
+        "roof_style": "flat roof, modern minimalist roofline",
+        "landscaping": "gravel garden, pebble landscaping, low maintenance xeriscaping",
+        "lighting": "dramatic chiaroscuro lighting, strong shadows and highlights",
+        "time_of_day": "night time, dark sky, artificial lighting, nocturnal atmosphere",
+        "weather": "foggy misty atmosphere, mysterious soft focus",
+        "mood": "dramatic intense mood, powerful bold atmosphere",
+        "color_grade": "dark moody grade, deep shadows, dramatic contrast",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["화산", "흑요석", "요새", "용암", "극적", "DREAM"],
+    },
+    {
+        "name": "ancient_tree_megacity",
+        "category": "DREAM",
+        "tier": "SS",
+        "mode": "exterior",
+        "label": "거목 위 거대 도시",
+        "description": "수천 년 된 초거대 나무들 위에 지어진 문명 도시. 나무 줄기가 고층 건물만큼 크고 가지 위에 도시 전체가 펼쳐지는 바이오필릭 판타지.",
+        "preset_prompt": "Professional architectural photography of an entire civilization built into and upon colossal ancient trees. The trees are unimaginably vast — each trunk is wider than a city block, bark textured like canyon walls, roots like mountain ridges. A complete city has grown with the trees over millennia: platforms, bridges, and buildings constructed from living wood and woven branches span between the enormous trunks at every level. Waterfalls pour from natural hollows high above. The canopy is so dense it creates its own weather system of clouds and mist. Shafts of green-gold light filter down through gaps in the leaves far above. The ultimate synthesis of nature and civilization. Shot on Hasselblad medium format, ultra-sharp, 8K resolution, award-winning architectural photography.",
+        "building_type": "small multi-family villa, urban residential building",
+        "arch_style": "vernacular architecture, local materials, organic natural building",
+        "ext_material": "wood siding, natural timber cladding, warm organic texture",
+        "roof_style": "green roof, rooftop garden, living grass roof, eco sustainable",
+        "landscaping": "naturalistic garden, wildflowers, organic planting, lush greenery",
+        "lighting": "natural daylight, bright sunlight streaming in, clear day",
+        "time_of_day": "late afternoon warm sunlight, relaxed golden atmosphere",
+        "weather": "foggy misty atmosphere, mysterious soft focus",
+        "mood": "biophilic natural mood, organic earthy serene atmosphere",
+        "color_grade": "warm golden color grade, cozy inviting tones",
+        "render_style": "high quality CGI architectural visualization, 3D render",
+        "tags": ["거목", "수상도시", "바이오필릭", "판타지", "자연문명", "DREAM"],
+    },
+]
+
+
+def main():
+    created = 0
+    skipped = 0
+
+    for preset in PRESETS:
+        path = PRESETS_DIR / f"{preset['name']}.json"
+        if path.exists():
+            print(f"  SKIP  {preset['name']}.json (이미 존재)")
+            skipped += 1
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(preset, f, ensure_ascii=False, indent=2)
+            print(f"  OK    {preset['name']}.json")
+            created += 1
+
+    print(f"\n완료: {created}개 생성, {skipped}개 건너뜀")
+    print(f"총 프리셋: {len(list(PRESETS_DIR.glob('*.json')))}개")
+
+
+if __name__ == "__main__":
+    main()
